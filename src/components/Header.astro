@@ -1,0 +1,87 @@
+---
+import { Image } from "@astrojs/image/components"
+
+import Menu from "@/images/icons/Menu.svg"
+
+const pages = [
+  {
+    name: "Início",
+    slug: "/home",
+  },
+  {
+    name: "Cardápio",
+    slug: "/menu",
+  },
+  {
+    name: "Eventos",
+    slug: "/events",
+  },
+  {
+    name: "Sobre Nós",
+    slug: "/about",
+  },
+  {
+    name: "Contato",
+    slug: "/contact",
+  },
+
+]
+---
+
+<nav class="w-full bg-zinc-800">
+  <div
+    class="m-auto flex max-w-5xl items-center justify-between px-6 py-3 lg:px-6"
+  >
+    <div class="w-[90px] h-[48px] flex align-center">
+      <img src="/LePetitLogo.png" alt="">
+
+    </div>
+
+    <div class="flex items-center gap-6">
+      {
+        pages.map((page) => (
+          <a
+            data-nav
+            href={page.slug}
+            class:list={"hidden md:block text-slate-100 hover:text-red-500"}
+          >
+            {page.name}
+          </a>
+        ))
+      }
+
+      <button class="block md:hidden">
+        <Image
+          width={32}
+          height={32}
+          src={Menu}
+          alt="Ícone de um menu"
+          loading={"eager"}
+          fetchpriority={"high"}
+        />
+      </button>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .selected {
+    @apply !text-primary-base;
+  }
+</style>
+
+<script defer>
+  function main() {
+    const pathname = location.pathname
+    /** @type {HTMLAnchorElement[]} */
+    const links = document.querySelectorAll("nav a[data-nav]")
+
+    links.forEach((link) => {
+      if (link.pathname === pathname) {
+        link.classList.add("selected")
+      }
+    })
+  }
+
+  document.addEventListener("DOMContentLoaded", main)
+</script>

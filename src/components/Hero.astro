@@ -1,0 +1,44 @@
+---
+import { Image } from "@astrojs/image/components"
+import Button from "../components/Button.astro"
+
+import HeroImage from "/public/Home/LovelyInhameAbobrinha.jpg"
+
+// export interface Props {
+//   title: string
+//   page?: { name: string; href: string }
+// }
+
+// const { title, page } = Astro.props
+---
+
+<header class="px-6 py-16 w-full flex items-center justify-center">
+  <div class="gap-6 flex flex-col items-center max-w-[1024px]">
+    <div class="gap-3 flex flex-col items-center justify-center">
+      <p>Bem-vindo a LePetitVillage ❤️</p>
+      <h1 class="text-center">Comida Africana Que Você Vai Amar</h1>
+    </div>
+    <p class="flex flex-col text-center">
+      <span>Nós celebramosas diversas e saborosas tradições culinárias da África.</span>
+      <br>
+      <span>Nossos talentosos chefs combinam habilmente receitas tradicionais com técnicas modernas para criar uma experiência culinária única e inesquecível.</span>
+      <br>
+      <span>Mime-se com uma grande variedade de pratos de dar água na boca que mostram os sabores vibrantes, especiarias aromáticas e ingredientes frescos que definem a culinária africana.</span>
+    </p>
+
+    <Button link="/menu" content="Cardápio" />
+
+    <div>
+      <Image
+        width={342}
+        height={300}
+        src={HeroImage}
+        alt="Amável inhame de abóbrinha servido em um prato."
+        class="m-auto h-full w-full object-cover"
+      />
+    </div>
+    
+  </div>
+
+</header>
+

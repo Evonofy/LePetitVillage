@@ -1,0 +1,217 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import { Image } from "@astrojs/image/components"
+
+// Images
+// First Section
+import SectionOne from "/public/AfricanCuisine.jpg"
+import CookingPot from "/public/Icons/CookingPot.svg"
+import Stool from "/public/Icons/Stool.svg"
+import People from "/public/Icons/People.svg"
+
+// Second Section
+import Fish from "/public/Icons/Fish.svg"
+import Champagne from "/public/Icons/Champagne.svg"
+import Leaf from "/public/Icons/Leaf.svg"
+import YellowCookingPot from "/public/Icons/CookingPotYELLOW.svg"
+
+import Hero from "@/components/Hero.astro"
+import Button from "../components/Button.astro"
+
+---
+
+<Layout
+  title="Top 10 Melhor Escola Para se Estudar do Estado de São Paulo | ETEC JRM"
+>
+  <Hero />
+
+  <section class="gap-6 flex flex-col px-6 py-8">
+    <h2 class="text-center">Você Vai Adorar Os Nossos Serviços</h2>
+
+    <div>
+        <Image
+          width={390}
+          height={300}
+          src={SectionOne}
+          alt="Culinária africana."
+          class="m-auto w-full object-cover"
+        />
+    </div>
+    <ul class="flex flex-col gap-8">
+      <li class="flex gap-4">
+        <Image
+          width={52}
+          height={52}
+          src={CookingPot}
+          alt="Panela de cozinha quente."
+          class="w-[52px] h-full object-cover"
+        />
+
+        <div class="p-3">
+          <p class="font-semibold">Culinária</p>
+          <p>Nosso cardápio celebra tradições culinárias africanas com receitas tradicionais e técnicas modernas. Oferecemos pratos deliciosos com sabores vibrantes, especiarias aromáticas e ingredientes frescos, proporcionando uma experiência culinária única e inesquecível.</p>
+        </div>
+      </li>
+      <li class="flex gap-4">
+        <Image
+          width={52}
+          height={52}
+          src={Stool}
+          alt="Pequeno banco alto."
+          class="w-[52px] h-full object-cover"
+        />
+
+        <div>
+          <p class="font-semibold">Atmosfera</p>
+          <p>O Le Petit Village combina decoração elegante com influências africanas tradicionais. Atmosfera acolhedora, tons quentes, móveis de madeira e música africana criam experiência gastronômica memorável.</p>
+        </div>
+      </li>
+      <li class="flex gap-4">
+        <Image
+          width={52}
+          height={52}
+          src={People}
+          alt="Quatro pessoas."
+          class="w-[52px] h-full object-cover"
+        />
+
+        <div>
+          <p class="font-semibold">Som Ao Vivo</p>
+          <p>Valorizamos a comunidade e a herança cultural africana. Colaboramos com artistas, músicos e performers africanos para promover seus talentos. Realizamos eventos culturais, apresentações ao vivo e exposições de arte, destacando as diversas expressões artísticas da África.</p>
+        </div>
+      </li>
+
+    </ul>
+
+  </section>
+
+  <section class="gap-6 flex flex-col px-6 py-8">
+    <div class="flex flex-col gap-3">
+      <h2>Experimente Nossa Variedade Culinária</h2>
+      <p>Aqui você não vai só passar um tempo em nosso restaurante mas terá uma experiência de começo ao fim para aproveitar ao máximo o que a culinária africana tem a oferecer.</p>
+      <Button link="/menu" content="Visitar Cardápio" />
+    </div>
+    <div class="gap-4 grid grid-cols-2 grid-rows-2">
+      <div class="gap-2 flex flex-col items-center bg-zinc-700 px-3 py-6">
+        <Image
+          width={52}
+          height={52}
+          src={Fish}
+          alt="Ícone de um peixe em um fundo amarelo."
+          class="w-[52px] h-full"
+        />
+        <h3>Petiscos</h3>
+        <p class="text-center">Inicie sua refeição com nossos molhos, asas fritas, tilápias assadas e outras opções.</p>
+      </div>
+
+      <div class="gap-2 flex flex-col items-center bg-zinc-700 px-3 py-6">
+        <Image
+          width={52}
+          height={52}
+          src={Champagne}
+          alt="Ícone de um peixe em um fundo amarelo."
+          class="w-[52px] h-full"
+        />
+        <h3>Bebidas</h3>
+        <p class="text-center">Sumo natural com sabor da África e muitas outras bebidas e drinks.</p>
+      </div>
+
+      <div class="gap-2 flex flex-col items-center bg-zinc-700 px-3 py-6">
+        <Image
+          width={52}
+          height={52}
+          src={Leaf}
+          alt="Ícone de um peixe em um fundo amarelo."
+          class="w-[52px] h-full"
+        />
+        <h3>Sem Carne</h3>
+        <p class="text-center">Contamos também com opções veganas e vegetarianas em nosso cardápio.</p>
+      </div>
+
+      <div class="gap-2 flex flex-col justify-start items-center bg-zinc-700 px-3 py-6">
+        <Image
+          width={52}
+          height={52}
+          src={YellowCookingPot}
+          alt="Ícone de um peixe em um fundo amarelo."
+          class="w-[52px] h-full"
+        />
+        <h3>Refeições</h3>
+        <p class="text-center">Sabores vibrantes, especiarias aromáticas e ingredientes frescos.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="gap-3 flex flex-col px-6 py-8">
+    <div class="gap-2">
+      <p class="text-yellow-200 font-semibold">Quem É A Petit Village</p>
+      <h2>Um Pouco De Nós</h2>
+    </div>
+    <p>Somos um encantador restaurante africano com influências camaronesas situado no coração de São Paulo, Brasil. Existimos desde XXXX com a intenção de trazer, combinando receitas tradicionais com técnicas modernas, uma experiência que você vai querer que seja recorrente.</p>
+    <Button link="/about" content="Sobre Nós"/>
+  </section>
+
+
+</Layout>
+
+<style>
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    height: auto !important;
+  }
+
+  :root {
+    --swiper-pagination-bullet-size: 20px;
+    --swiper-pagination-bullet-inactive-color: #646f7e;
+    --swiper-theme-color: #f50047;
+  }
+</style>
+
+<script defer type="module">
+  import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+  const desktop = window.matchMedia("(min-width: 1024px)")
+
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    slidesPerView: desktop.matches ? 2 : 1,
+    spaceBetween: desktop.matches ? 32 : 12,
+  })
+
+  var coursesSwiper = new Swiper(".courses-swiper", {
+    pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: desktop.matches ? 32 : 12,
+  })
+
+  desktop.addEventListener("change", () => {
+    if (desktop.matches) {
+      swiper.params.slidesPerView = 2
+    } else {
+      swiper.params.slidesPerView = 1
+    }
+  })
+</script>
