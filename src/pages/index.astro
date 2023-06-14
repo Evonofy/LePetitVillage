@@ -15,13 +15,26 @@ import Champagne from "/public/Icons/Champagne.svg"
 import Leaf from "/public/Icons/Leaf.svg"
 import YellowCookingPot from "/public/Icons/CookingPotYELLOW.svg"
 
+// Third Section 
+import ChefSimiling from "/public/Home/ChefSmiling.jpg"
+
+// Fourth Section
+import Email from "/public/Icons/Email.svg"
+import Phone from "/public/Icons/Phone.svg"
+import Calendar from "/public/Icons/Calendar.svg"
+import Hourglass from "/public/Icons/Hourglass.svg"
+import RightArrow from "/public/Icons/RightArrow.svg"
+import Cake from "/public/Icons/Cake.svg"
+import Info from "/public/Icons/Info.svg"
+import DinningTable from "/public/Home/DinningDecoratedTable.jpg"
+
 import Hero from "@/components/Hero.astro"
 import Button from "../components/Button.astro"
 
 ---
 
 <Layout
-  title="Top 10 Melhor Escola Para se Estudar do Estado de São Paulo | ETEC JRM"
+  title="Le Petit Village | Restaurante amável com influências africanas."
 >
   <Hero />
 
@@ -150,6 +163,121 @@ import Button from "../components/Button.astro"
     </div>
     <p>Somos um encantador restaurante africano com influências camaronesas situado no coração de São Paulo, Brasil. Existimos desde XXXX com a intenção de trazer, combinando receitas tradicionais com técnicas modernas, uma experiência que você vai querer que seja recorrente.</p>
     <Button link="/about" content="Sobre Nós"/>
+    <Image
+      width={390}
+      height={300}
+      src={ChefSimiling}
+      alt="Foto de um chefe muito feliz."
+      class="w-full h-full"
+    />
+  </section>
+
+  <section class="gap-3 flex flex-col px-6 py-8">
+    <div class="flex flex-col gap-6">
+      <h2>Venha Nos Visitar Ou Faça Seu Evento Aqui</h2>
+      <p>Verifique nossas informações de contato aqui e faça seus eventos na nossa casa!</p>
+      <div class="gap-3 flex flex-col">
+        <div class="gap-3 flex items-center">
+          <Image
+            width={32}
+            height={32}
+            src={Email}
+            alt="Ícone simples de um envelope."
+            class="w-[32px] h-full"
+          />
+          <p>lepetitvillage@hotmail.com</p>
+        </div>
+        <div class="gap-3 flex items-center">
+          <Image
+            width={32}
+            height={32}
+            src={Phone}
+            alt="Ícone simples de um telefone."
+            class="w-[32px] h-full"
+          />
+          <p class="w-full">(11) 3331 - 3433</p>
+          <p class="w-full">(11) 3225 - 0234</p>
+        </div>
+        <div class="gap-3 flex items-start">
+          <Image
+            width={32}
+            height={32}
+            src={Calendar}
+            alt="Ícone simples de um calendário com um acerto no meio."
+            class="w-[32px] h-full"
+          />
+          <div class="gap-2 flex flex-col">
+            <p class="w-full">Segunda-Feira - Sábado</p>
+            <p class="w-full">Nos Domingos, Aberto Somente No Último Domingo Do Mês</p>
+          </div>
+        </div>
+        <div class="gap-3 flex items-center">
+          <Image
+            width={32}
+            height={32}
+            src={Hourglass}
+            alt="Ícone simples de uma ampulheta."
+            class="w-[32px] h-full"
+          />
+          <p>12h00 - 02h00</p>
+        </div>
+      </div>
+
+      <div class="gap-4 flex flex-col">
+
+        <div class="flex flex-col gap-3">
+          <Image
+            width={56}
+            height={56}
+            src={Cake}
+            alt="Ícone simples de um bolo."
+            class="w-[56px] h-full"
+          />
+          <h3>Eventos</h3>
+          <p>Agende um reunião particular, festa de aniversário, casamento ou outros por aqui.</p>
+          <div class="flex gap-3 items-center">
+            <a class="text-zinc-100" href="/events">Ir Para Eventos</a>
+            <Image
+              width={32}
+              height={32}
+              src={RightArrow}
+              alt="Ícone simples de uma seta para direita."
+              class="w-[32px] h-full"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <Image
+            width={56}
+            height={56}
+            src={Info}
+            alt="Ícone simples de informação."
+            class="w-[56px] h-full"
+          />
+          <h3>Contato</h3>
+          <p>Veja onde estamos localizados ou envie-nos uma mensagem.</p>
+          <div class="flex gap-3 items-center">
+            <a class="text-zinc-100" href="/events">Ir Para Contato</a>
+            <Image
+              width={32}
+              height={32}
+              src={RightArrow}
+              alt="Ícone simples de uma seta para direita."
+              class="w-[32px] h-full"
+            />
+          </div>
+        </div>
+
+      </div>
+      <Image
+        width={390}
+        height={300}
+        src={DinningTable}
+        alt="Mesa de jantar bem decorada."
+        class="w-full h-full"
+      />
+    </div>
   </section>
 
 
