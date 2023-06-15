@@ -1,0 +1,63 @@
+---
+import { Image } from "@astrojs/image/components"
+import Layout from "@/layouts/Layout.astro"
+import BreadcrumbHero from "@/components/BreadcrumbHero.astro"
+
+import Fish from "/public/Icons/Fish.svg"
+
+export type Food = {
+  image: string
+  name: string
+  description: string
+  peopleQuantity?: number
+}
+
+const Petiscos: Food[] = [
+  {
+    image: "/Icons/Baggnites.svg",
+    name: "Beignets De Crevettes",
+    description: "huh",
+    peopleQuantity: 2,
+  }
+]
+---
+
+<Layout title="Eventos">
+  <BreadcrumbHero
+    title="Sobre Nós"
+    description="Nós acreditamos na necessidade de compartilhar o máximo da culinária Africana para o mundo."
+    page={{ name: "Sobre Nós", href: "/about" }}
+    img="/Hero/Soup.jpg"
+  />
+
+  <section class="flex flex-col px-6 py-8">
+    <div class="gap-4 flex items-center">
+        <Image
+            width={40}
+            height={40}
+            src={Fish}
+            alt="Ícones simples com três pessoas."
+            class="w-[40px] h-full object-cover"
+        />
+        <h2>Petiscos</h2>
+
+    </div>
+    <div class="flex flex-col items-center">
+      {
+        Petiscos.map((petisco) => (
+          <div class="flex rounded-full">
+            <img src={petisco.image} alt="">
+          </div>
+          <div class="gap-3 flex flex-col">
+            <h3>{petisco.name}</h3>
+            <p>{petisco.description}</p>
+            <p>{petisco.peopleQuantity}</p>
+          </div>
+          
+        ))
+      }
+    </div>
+
+  </section>
+
+</Layout>
