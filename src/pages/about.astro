@@ -1,0 +1,42 @@
+---
+import { Image } from "@astrojs/image/components"
+import Layout from "@/layouts/Layout.astro"
+import BreadcrumbHero from "@/components/BreadcrumbHero.astro"
+
+import LePetitFront from "/public/About/LePetitFront.jpg"
+---
+
+<Layout
+  title="Le Petit Village | Restaurante amável com influências africanas."
+>
+
+  <BreadcrumbHero
+    title="Sobre Nós"
+    description="Nós acreditamos na necessidade de compartilhar o máximo da culinária Africana para o mundo."
+    page={{ name: "Sobre Nós", href: "/about" }}
+    img="/Hero/Rice.jpg"
+  />
+
+  <section class="gap-6 flex flex-col px-6 py-8">
+    <div class="gap-4 flex flex-col">
+        <h2>Nossa História</h2>
+        <Image
+            width={450}
+            height={496}
+            src={LePetitFront}
+            alt="Ícones simples com três pessoas."
+            class="w-full h-[20rem] object-cover"
+        />
+    </div>
+    <div class="gap-6 flex flex-col lg:flex-row">
+        <div class="gap-2 flex flex-col">
+            <h3>Por Que Fomos Criados</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at elit ac neque volutpat dapibus.</p>
+        </div>
+        <div class="gap-2 flex flex-col">
+            <h3>Quando Fomos Criados</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at elit ac neque volutpat dapibus.</p>
+        </div>
+    </div>
+  </section>
+</Layout>

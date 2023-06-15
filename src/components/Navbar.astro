@@ -1,8 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components"
-
-import Menu from "@/images/icons/Menu.svg"
-
 const pages = [
   {
     name: "Início",
@@ -51,16 +47,6 @@ const pages = [
         ))
       }
 
-      <button class="block md:hidden">
-        <Image
-          width={32}
-          height={32}
-          src={Menu}
-          alt="Ícone de um menu"
-          loading={"eager"}
-          fetchpriority={"high"}
-        />
-      </button>
     </div>
   </div>
 </nav>

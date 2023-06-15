@@ -1,0 +1,35 @@
+---
+import { Image } from "@astrojs/image/components"
+import Layout from "@/layouts/Layout.astro"
+import BreadcrumbHero from "@/components/BreadcrumbHero.astro"
+
+import Pin from "/public/Icons/Pin.svg"
+---
+
+<Layout title="Contato">
+  <BreadcrumbHero
+    title="Contato"
+    description="Saiba onde estamos, dê o seu feedback ou tire dúvidas conosco por aqui."
+    page={{ name: "Contato", href: "/contact" }}
+    img="/Hero/Soup.jpg"
+  />
+
+  <section class="flex flex-col px-6 py-8">
+    <h2>Localização</h2>
+
+    <div class="flex flex-col">
+       <div class="flex">
+          <Image
+            width={32}
+            height={32}
+            quality={50}
+            src={Pin}
+            alt="Culinária africana."
+            class="w-full h-full object-cover"
+          />
+          <p>R. Marquês de Itu, 252 - Vila Buarque, São Paulo - SP, 01220-010</p>
+        </div> 
+    </div>
+
+  </section>
+</Layout>

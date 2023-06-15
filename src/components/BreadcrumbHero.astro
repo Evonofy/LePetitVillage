@@ -1,0 +1,43 @@
+---
+export interface Props {
+  title: string
+  description: string
+  page?: { name: string; href: string }
+  img: string
+}
+
+const { title, description, page, img } = Astro.props
+
+---
+
+<header class="relative flex flex-col">
+    <img class="z-10 absolute inset-0 -z-10 m-auto h-full w-full object-cover brightness-[20%]" src={img} alt="">
+    <div class="z-20 px-6 py-12 lg:px-32 lg:py-20">
+  
+      <section class="m-auto w-full max-w-5xl">
+        <div class="z-20 flex flex-col gap-4 lg:w-[600px]">
+          {
+            page ? (
+              <p class="text-accent-base">
+                <a href="/" class="hover:underline">
+                  Home
+                </a>{" "}
+                {">"} <a href={page.href}>{page.name}</a>
+              </p>
+            ) : (
+                <p>None</p>
+            )
+          }
+  
+          <h1 class="text-slate-50">
+            {title}
+          </h1>
+          <p>
+            {description}
+          </p>
+        </div>
+      </section>
+    </div>
+</header>
+  
+

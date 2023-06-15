@@ -1,0 +1,132 @@
+---
+import { Image } from "@astrojs/image/components"
+import Layout from "@/layouts/Layout.astro"
+import BreadcrumbHero from "@/components/BreadcrumbHero.astro"
+
+import ThreePeople from "/public/Icons/ThreePeople.svg"
+import ThreePeopleSLATE from "/public/Icons/ThreePeopleSLATE.svg"
+---
+
+<Layout title="Eventos">
+  <BreadcrumbHero
+    title="Eventos"
+    description="Faça seus melhores momentos estarem presentes em um local com muita boa comida!"
+    page={{ name: "Eventos", href: "/events" }}
+    img="/Hero/CookingPots.jpg"
+  />
+
+  <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8 lg:py-16 lg:flex-row lg:items-center">
+    <div class="flex flex-col gap-2 lg:w-full">
+      <h2>Agende Seus Eventos Aqui</h2>
+      <p>Agende seu local de reuniões privadas, festas de aniverśario, reuniões corporativas e muitos outros.</p>
+    </div>
+    <div class="lg:w-full flex gap-4 overflow-scroll">
+
+      <div class="w-3/4 flex-none bg-red-800 gap-2 px-6 py-3">
+        <div class="gap-2 flex items-center">
+          <Image
+            width={32}
+            height={32}
+            quality={100}
+            src={ThreePeople}
+            alt="Ícones simples com três pessoas."
+            class="w-[32px] h-full object-cover"
+          />
+          <h3>Reuniões</h3>
+        </div>
+        <p>Realize reuniões corporativas ou até apenas reuniões privadas com sua famílias.</p>
+      </div>
+
+      <div class="w-3/4 flex-none bg-yellow-300 gap-2 px-6 py-3">
+        <div class="gap-2 flex items-center">
+          <Image
+            width={32}
+            height={32}
+            quality={100}
+            src={ThreePeopleSLATE}
+            alt="Ícones simples com três pessoas."
+            class="w-[32px] h-full object-cover"
+          />
+          <h3 class="text-slate-800">Festas De Aniversário</h3>
+        </div>
+        <p class="text-slate-600">Faça sua ou a festa de aniversário de seus companheiros aqui.</p>
+      </div>
+
+      <div class="w-3/4 flex-none bg-red-800 gap-2 px-6 py-3">
+        <div class="gap-2 flex items-center">
+          <Image
+            width={32}
+            height={32}
+            quality={100}
+            src={ThreePeople}
+            alt="Ícones simples com três pessoas."
+            class="w-[32px] h-full object-cover"
+          />
+          <h3>Festa De Casamento</h3>
+        </div>
+        <p>Recém casados? Aniversário de casamento? Faça ele na Petit Village.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
+    <h2>Preencha As Informações Abaixo</h2>
+    <form class="gap-3 flex flex-col" action="/">
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-full gap-4 flex">
+          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
+            <p class="text-slate-100 font-semibold">01</p>
+          </div>
+          <div class="gap-2 flex flex-col">
+            <label class="text-slate-100" for="name">Qual Seu Nome?</label>
+            <input class="p-0 border-0 bg-zinc-900 text-slate-100" placeholder="Insira Seu Nome Aqui" type="text" id="fname" name="fname">
+          </div>
+        </div>
+        <div class="w-full gap-4 flex">
+          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
+            <p class="text-slate-100 font-semibold">02</p>
+          </div>
+          <div class="gap-2 flex flex-col">
+            <label class="text-slate-100" for="name">Quantas Pessoas Estarão Presentes</label>
+            <input class="p-0 border-0 bg-zinc-900 text-slate-100" placeholder="Insira A Quantidade Aqui" type="text" id="fname" name="fname">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col lg:flex-row">
+      <div class="w-full gap-4 flex">
+        <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
+          <p class="text-slate-100 font-semibold">03</p>
+        </div>
+        <div class="gap-2 flex flex-col">
+          <label class="text-slate-100" for="name">Tipo Da Ocasião</label>
+          <select class="border-0 rounded-lg bg-zinc-700 text-slate-100" name="occasion" id="">
+            <option value="anniversary">Festa De Aniversário</option>
+            <option value="happyhour">Happy Hour</option>
+            <option value="marriage">Festa De Casamento</option>
+            <option value="private">Reunião</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="w-full gap-4 flex">
+        <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
+          <p class="text-slate-100 font-semibold">04</p>
+        </div>
+        <div class="gap-2 flex flex-col">
+          <label class="text-slate-100" for="name">Aberto Ao Público?</label>
+          <select class="border-0 rounded-lg bg-zinc-700 text-slate-100" name="occasion" id="">
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    </form>
+  </section>
+
+</Layout>
