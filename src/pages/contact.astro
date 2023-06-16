@@ -18,8 +18,8 @@ import Phone from "/public/Icons/Phone.svg"
   img="/Hero/Soup.jpg"
   />
   
-  <section class="max-w-[1024px] m-auto gap-16 flex flex-col px-6 py-8 lg:py-16">
-    <div class="gap-4 lg:gap-8 flex flex-col lg:flex-row">
+  <section class="max-w-[1024px] m-auto gap-16 flex flex-col lg:flex-row px-6 py-8 lg:py-16">
+    <div class="gap-4 lg:gap-8 flex flex-col">
       <div class="w-full gap-6 flex flex-col">
         <h2>Localização</h2>
         <div class="gap-3 flex">
@@ -59,104 +59,57 @@ import Phone from "/public/Icons/Phone.svg"
           <p>12h00 - 02h00</p>
         </div>
       </div>
+      <div class="gap-6 lg:gap-8 flex flex-col lg:flex-row">
+        <div class="w-full gap-6 flex flex-col">
+          <h2>Comunicação</h2>
+          <div class="gap-3 flex items-center">
+            <Image
+            width={32}
+            height={32}
+            quality={50}
+            src={Email}
+            alt="Ícone simples de um calendário."
+            class="w-[32px] h-full object-cover"
+            />
+            <a href="mailto:lepetitvillage@hotmail.com">lepetitvillage@hotmail.com</a>
+          </div>
+          <div class="gap-3 flex items-center">
+            <Image
+            width={32}
+            height={32}
+            quality={50}
+            src={Phone}
+            alt="Ícone simples de um calendário."
+            class="w-[32px] h-full object-cover"
+            />
+            <p>(11) 3225 - 0234</p>
+          </div>
+          <div class="gap-3 flex items-center">
+            <Image
+            width={32}
+            height={32}
+            quality={50}
+            src={Phone}
+            alt="Ícone simples de um calendário."
+            class="w-[32px] h-full object-cover"
+            />
+            <p>(11) 3331 - 3433</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="w-full h-full flex ">
       <iframe
       width="100%"
-      height="450"
+      height="500"
       style="border:0"
       loading="lazy"
       allowfullscreen
       referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC_t3Xn1sCE-f7EQ2xN-9TJZuvYhdJLxkI&q=R.+Marquês+de+Itu,+252+-+Vila+Buarque,+São+Paulo+-+SP,+01220-010">
-    </iframe>
+      </iframe> 
   </div>
   
-  <div class="gap-6 lg:gap-8 flex flex-col lg:flex-row">
-    <div class="w-full gap-6 flex flex-col">
-      <h2>Comunicação</h2>
-      <div class="gap-3 flex items-center">
-        <Image
-        width={32}
-        height={32}
-        quality={50}
-        src={Email}
-        alt="Ícone simples de um calendário."
-        class="w-[32px] h-full object-cover"
-        />
-        <p>lepetitvillage@hotmail.com</p>
-      </div>
-      <div class="gap-3 flex items-center">
-        <Image
-        width={32}
-        height={32}
-        quality={50}
-        src={Phone}
-        alt="Ícone simples de um calendário."
-        class="w-[32px] h-full object-cover"
-        />
-        <p>(11) 3225 - 0234</p>
-      </div>
-      <div class="gap-3 flex items-center">
-        <Image
-        width={32}
-        height={32}
-        quality={50}
-        src={Phone}
-        alt="Ícone simples de um calendário."
-        class="w-[32px] h-full object-cover"
-        />
-        <p>(11) 3331 - 3433</p>
-      </div>
-    </div>
-    
-    <form class="w-full gap-6 flex flex-col" action="/">
-      <h3>Preencha As Informações Abaixo</h3>
-
-      <div class="gap-8 flex flex-col">
-
-        <div class="w-full gap-4 flex">
-          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-            <p class="text-slate-100 font-semibold">01</p>
-          </div>
-          <div class="gap-2 flex flex-col">
-            <label class="text-slate-100" for="name">Qual Seu Nome?</label>
-            <input class="p-0 border-0 bg-zinc-900 text-slate-100" placeholder="Insira Seu Nome Aqui" type="text" id="fname" name="fname">
-          </div>
-        </div>
-
-        <div class="w-full gap-4 flex">
-          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-            <p class="text-slate-100 font-semibold">02</p>
-          </div>
-          <div class="gap-2 flex flex-col">
-            <label class="text-slate-100" for="name">Qual Seu E-mail?</label>
-            <input class="p-0 border-0 bg-zinc-900 text-slate-100" placeholder="seuemailaqui@provedor.algo" type="email" id="fname" name="fname">
-          </div>
-        </div>
-        
-        <div class="w-full gap-4 flex">
-          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-            <p class="text-slate-100 font-semibold">03</p>
-          </div>
-          <div class="gap-2 flex flex-col">
-            <label class="text-slate-100" for="name">Assunto</label>
-            <input class="p-0 border-0 bg-zinc-900 text-slate-100" placeholder="Insira O Assunto Aqui" type="text" id="fname" name="fname">
-          </div>
-        </div>
-
-        <div class="w-full gap-4 flex">
-          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-            <p class="text-slate-100 font-semibold">04</p>
-          </div>
-          <div class="gap-2 flex flex-col">
-            <label class="text-slate-100" for="name">Mensagem</label>
-            <textarea class="w-full bg-zinc-700 text-zinc-300 border-0 rounded" name="message" rows="10" cols="30"></textarea>
-          </div>
-        </div>
-        
-      </div>
-
-      
-    </form>
-  </div>
 </section>
 </Layout>
