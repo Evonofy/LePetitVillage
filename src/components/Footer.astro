@@ -1,0 +1,127 @@
+---
+import { Image } from "@astrojs/image/components"
+
+import Calendar from "/public/Icons/Calendar.svg"
+import Hourglass from "/public/Icons/Hourglass.svg"
+import Email from "/public/Icons/Email.svg"
+import Phone from "/public/Icons/Phone.svg"
+---
+
+<footer class="w-full hidden lg:flex flex-col bg-zinc-800 py-16">
+    <div class="max-w-[1024px] m-auto gap-6 flex flex-col px-4">
+        <div class="flex gap-6">
+            <div class="gap-4 flex flex-col">
+                <div class="gap-3 flex items-center">
+                    <Image
+                    width={32}
+                    height={32}
+                    quality={50}
+                    src={Email}
+                    alt="Ícone simples de um calendário."
+                    class="w-[32px] h-full object-cover"
+                    />
+                    <a href="mailto:lepetitvillage@hotmail.com">lepetitvillage@hotmail.com</a>
+                </div>
+                <div class="gap-3 flex">
+                    <Image
+                    width={32}
+                    height={32}
+                    quality={50}
+                    src={Calendar}
+                    alt="Ícone simples de um calendário."
+                    class="w-[32px] h-[32px] object-cover"
+                    />
+                    <div class="gap-3 flex flex-col lg:flex-row">
+                        <p class="w-full">Segunda-Feira - Sábado</p>
+                        <p class="w-full">Nos Domingos, Aberto Apenas Nos Últimos Domingos Do Mês</p>
+                    </div>
+                </div>
+                <div class="gap-3 flex items-center">
+                    <Image
+                    width={32}
+                    height={32}
+                    quality={50}
+                    src={Hourglass}
+                    alt="Ícone simples de uma ampulheta."
+                    class="w-[32px] h-[32px] object-cover"
+                    />
+                    <p>12h00 - 02h00</p>
+                </div>
+                <div class="gap-3 flex items-center">
+                    <Image
+                    width={32}
+                    height={32}
+                    quality={50}
+                    src={Phone}
+                    alt="Ícone simples de um calendário."
+                    class="w-[32px] h-full object-cover"
+                    />
+                    <p>(11) 3225 - 0234</p>
+                    <p>(11) 3331 - 3433</p>
+                </div>
+            </div>
+            
+            <div class="w-full h-full flex ">
+                <iframe
+                width="100%"
+                height="500"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC_t3Xn1sCE-f7EQ2xN-9TJZuvYhdJLxkI&q=R.+Marquês+de+Itu,+252+-+Vila+Buarque,+São+Paulo+-+SP,+01220-010">
+                </iframe>
+        </div>
+    </div>
+    
+    <div class="flex items-center justify-between">
+        <a class="w-36" href="/">
+            <Image
+            width={612}
+            height={320}
+            quality={50}
+            src="/LePetitLogo.png"
+            format="png"
+            alt="Ícone simples de um calendário."
+            class="w-full"
+            />
+        </a>
+
+        <div class="gap-4 flex">
+            <div class="h-max rounded-full p-3 stroke-slate-400 border-2">
+                <Image
+                width={612}
+                height={320}
+                quality={50}
+                src="/Icons/Facebook.svg"
+                format="svg"
+                alt="Ícone simples de um calendário."
+                class="w-full"
+                />
+            </div>
+            <div class="h-max rounded-full p-3 stroke-slate-400 border-2">
+                <Image
+                width={32}
+                height={32}
+                quality={50}
+                src="/Icons/Instagram.svg"
+                format="svg"
+                alt="Ícone simples de um calendário."
+                class="w-full"
+                />
+            </div>
+
+        </div>
+
+        <div class="flex flex-col">
+            <p>© 2023 LePetit Village. Todos Direitos Reservados</p>
+            <p class="text-right">Feito Por <a href="https://github.com/ThiagoThalisson">Thiago Thalisson</a> E <a href="https://github.com/VitorGouveia">Vitor Gouveia</a></p>
+        </div>
+    </div>
+    
+</div>       
+
+
+
+
+</footer>

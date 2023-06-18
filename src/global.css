@@ -35,8 +35,9 @@ html {
     font-family: 'Montserrat', sans-serif;
   }
 
-  a {
-    font-weight: 600;
+  a,
+  button {
+    @apply font-semibold;
   }
 }
 
