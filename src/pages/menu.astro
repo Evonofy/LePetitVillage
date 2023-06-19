@@ -14,7 +14,7 @@ import Wine from "/public/Icons/Wine.svg"
 export type Food = {
   image: string
   name: string
-  description?: string
+  description: string
   peopleQuantity?: number
 }
 
@@ -88,223 +88,228 @@ const Dishes: Food[] = [
 ]
 
 const Drinks: Food[] = [
-  {
-    image: "/Menu/Drinks/ÁguaMineral.jpg",
-    name: "Água Mineral",
-    description: "Água mineral sem gás ou com gás de 500ml.",
-    peopleQuantity: 1,
-  },
-  {
-    image: "/Menu/Drinks/ÁguaDeCoco.jpg",
-    name: "Água De Coco",
-    description: "Água de coco, Puro Coco de um 1 litro.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/Drinks/SchweppesCitrus.jpg",
-    name: "Schweppes Citrus",
-    description: "Refrigerante Schweppes sabor Citrus em lata de 350ml.",
-    peopleQuantity: 1,
-  },
-  {
-    image: "/Menu/Drinks/CocaCola.jpg",
-    name: "Coca-Cola",
-    description: "Refrigerante Coca-Cola em lata de 350ml.",
-    peopleQuantity: 1,
-  },
-  {
-    image: "/Menu/Drinks/Fanta.jpg",
-    name: "Fanta (Diferentes Sabores)",
-    description: "Refrigerante Fanta sabor Laranja ou Uva em lata de 350ml.",
-    peopleQuantity: 1,
-  },
-  {
-    image: "/Menu/Drinks/Guaraná.jpg",
-    name: "Guaraná Antártica",
-    description: "Refrigerante Fanta sabor Laranja ou Uva em lata de 350ml.",
-    peopleQuantity: 1,
-  },
-  {
-    image: "/Menu/Drinks/ÁguaTônica.jpg",
-    name: "Água Tônica",
-    description: "Água tônica em lata de 350ml.",
-    peopleQuantity: 1,
-  },
-  {
-    image: "/Menu/Drinks/RedBull.jpg",
-    name: "Red Bull",
-    description: "Energético em lata de 350ml.",
-    peopleQuantity: 1,
-  },
+{
+  image: "/Menu/Drinks/ÁguaMineral.jpg",
+  name: "Água Mineral",
+  description: "Água mineral sem gás ou com gás de 500ml.",
+  peopleQuantity: 1,
+},
+{
+  image: "/Menu/Drinks/ÁguaDeCoco.jpg",
+  name: "Água De Coco",
+  description: "Água de coco, Puro Coco de um 1 litro.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/Drinks/SchweppesCitrus.jpg",
+  name: "Schweppes Citrus",
+  description: "Refrigerante Schweppes sabor Citrus em lata de 350ml.",
+  peopleQuantity: 1,
+},
+{
+  image: "/Menu/Drinks/CocaCola.jpg",
+  name: "Coca-Cola",
+  description: "Refrigerante Coca-Cola em lata de 350ml.",
+  peopleQuantity: 1,
+},
+{
+  image: "/Menu/Drinks/Fanta.jpg",
+  name: "Fanta (Diferentes Sabores)",
+  description: "Refrigerante Fanta sabor Laranja ou Uva em lata de 350ml.",
+  peopleQuantity: 1,
+},
+{
+  image: "/Menu/Drinks/Guaraná.jpg",
+  name: "Guaraná Antártica",
+  description: "Refrigerante Fanta sabor Laranja ou Uva em lata de 350ml.",
+  peopleQuantity: 1,
+},
+{
+  image: "/Menu/Drinks/ÁguaTônica.jpg",
+  name: "Água Tônica",
+  description: "Água tônica em lata de 350ml.",
+  peopleQuantity: 1,
+},
+{
+  image: "/Menu/Drinks/RedBull.jpg",
+  name: "Red Bull",
+  description: "Energético em lata de 350ml.",
+  peopleQuantity: 1,
+},
 ]
 
 const Beers: Food[] = [
-  {
-    image: "/Menu/Beers/SmirnoffIce.jpg",
-    name: "Smirnoff Ice",
-    description: "Long neck de 275ml.",
-    peopleQuantity: 1,
-  },
-  {
-    image: "/Menu/Beers/BrahmaDuplo.jpg",
-    name: "Brahma Duplo Malte",
-    description: "Garrafa de 600ml.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/Beers/CervejaSkol.jpg",
-    name: "Skol",
-    description: "Garrafa de 600ml.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/Beers/SkolBeats.jpg",
-    name: "Skol Beats",
-    description: "Long neck de 313ml.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/Beers/Heineken.jpg",
-    name: "Heineken",
-    description: "Garrafa de 600ml.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/Beers/Original.jpg",
-    name: "Original",
-    description: "Garrafa de 600ml.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/Beers/Budweiser.jpg",
-    name: "Budweiser",
-    description: "Long neck de 330ml.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/Beers/Corona.jpg",
-    name: "Corona",
-    description: "Long neck de 330ml.",
-    peopleQuantity: 2,
-  },
+{
+  image: "/Menu/Beers/SmirnoffIce.jpg",
+  name: "Smirnoff Ice",
+  description: "Long neck de 275ml.",
+  peopleQuantity: 1,
+},
+{
+  image: "/Menu/Beers/BrahmaDuplo.jpg",
+  name: "Brahma Duplo Malte",
+  description: "Garrafa de 600ml.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/Beers/CervejaSkol.jpg",
+  name: "Skol",
+  description: "Garrafa de 600ml.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/Beers/SkolBeats.jpg",
+  name: "Skol Beats",
+  description: "Long neck de 313ml.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/Beers/Heineken.jpg",
+  name: "Heineken",
+  description: "Garrafa de 600ml.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/Beers/Original.jpg",
+  name: "Original",
+  description: "Garrafa de 600ml.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/Beers/Budweiser.jpg",
+  name: "Budweiser",
+  description: "Long neck de 330ml.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/Beers/Corona.jpg",
+  name: "Corona",
+  description: "Long neck de 330ml.",
+  peopleQuantity: 2,
+},
 ]
 
 const HotBeers: Food[] = [
-  {
-    image: "/Menu/HotBeers/Campari.jpg",
-    name: "Campari",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/HotBeers/VodkaSmirnoff.jpg",
-    name: "Vodka Smirnoff",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/HotBeers/Dreher.jpg",
-    name: "Conhaque Dreher",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/HotBeers/Tequiloka.jpg",
-    name: "Tequiloka",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/HotBeers/Amarula.jpg",
-    name: "Amarula",
-    peopleQuantity: 2,
-  },
+{
+  image: "/Menu/HotBeers/Campari.jpg",
+  name: "Campari",
+  description: "Licor de cor vermelha intensa e sabor amargo. Ele é feito a partir de uma mistura de ervas, frutas e cascas de laranja amarga.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/HotBeers/VodkaSmirnoff.jpg",
+  name: "Vodka Smirnoff",
+  description: "Utilizada em uma variedade de coquetéis e drinks, sendo conhecida pela sua versatilidade e por misturar-se bem com outros ingredientes, como sucos, refrigerantes e xaropes.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/HotBeers/Dreher.jpg",
+  name: "Conhaque Dreher",
+  description: "Bebida destilada feita a partir de uvas fermentadas.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/HotBeers/Tequiloka.jpg",
+  name: "Tequiloka",
+  description: "Bebida alcoólica brasileira que combina os sabores da tequila com a caipirinha, uma bebida tradicional do país.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/HotBeers/Amarula.jpg",
+  name: "Amarula",
+  description: "Licor sul-africano feito a partir do fruto da árvore maruleira, também conhecida como marula.",
+  peopleQuantity: 2,
+},
 ]
 
 const WhiskyCombos: Food[] = [
-  {
-    image: "/Menu/WhiskyAndCombos/Passport.jpg",
-    name: "Passport",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/JackDaniels.jpg",
-    name: "Jack Daniels",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/JohnnieWalkerBlack.jpg",
-    name: "Johnnie Walker Black Label",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/JohnnieWalkerDoubleBlack.jpg",
-    name: "Johnnie Walker Double Black",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/JohnnieWalkerGreen.jpg",
-    name: "Johnnie Walker Green Label",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/JohnnieWalkerPlatinum.jpg",
-    name: "Johnnie Walker Platinum Label",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/JohnnieWalkerBlue.jpg",
-    name: "Jhonnie Walker Blue Label",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/ChivasRegal.jpg",
-    name: "Chivas Regal",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WhiskyAndCombos/BuchanansDeluxe.jpg",
-    name: "Buchanan's Deluxe",
-    description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
-    peopleQuantity: 2,
-  },
+{
+  image: "/Menu/WhiskyAndCombos/Passport.jpg",
+  name: "Passport",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/JackDaniels.jpg",
+  name: "Jack Daniels",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/JohnnieWalkerBlack.jpg",
+  name: "Johnnie Walker Black Label",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/JohnnieWalkerDoubleBlack.jpg",
+  name: "Johnnie Walker Double Black",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/JohnnieWalkerGreen.jpg",
+  name: "Johnnie Walker Green Label",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/JohnnieWalkerPlatinum.jpg",
+  name: "Johnnie Walker Platinum Label",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/JohnnieWalkerBlue.jpg",
+  name: "Jhonnie Walker Blue Label",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/ChivasRegal.jpg",
+  name: "Chivas Regal",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WhiskyAndCombos/BuchanansDeluxe.jpg",
+  name: "Buchanan's Deluxe",
+  description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
+  peopleQuantity: 2,
+},
 ]
 
 const WinesAndChampagne: Food[] = [
-  {
-    image: "/Menu/WinesAndChampagne/MarcusJamesReservado.jpg",
-    name: "Marcus James Reservado",
-    description: "Garrafa.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WinesAndChampagne/PasoLosValles.jpg",
-    name: "Paso Los Valles Cabernet Sauvignon",
-    description: "Garrafa.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WinesAndChampagne/MoetChandon.jpg",
-    name: "Moet Chandon",
-    description: "Garrafa.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WinesAndChampagne/CountryWine.jpg",
-    name: "Country Wine",
-    description: "Garrafa.",
-    peopleQuantity: 2,
-  },
-  {
-    image: "/Menu/WinesAndChampagne/ChandonBrut.jpg",
-    name: "Chandon Brut",
-    description: "Garrafa.",
-    peopleQuantity: 2,
-  },
+{
+  image: "/Menu/WinesAndChampagne/MarcusJamesReservado.jpg",
+  name: "Marcus James Reservado",
+  description: "Garrafa.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WinesAndChampagne/PasoLosValles.jpg",
+  name: "Paso Los Valles Cabernet Sauvignon",
+  description: "Garrafa.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WinesAndChampagne/MoetChandon.jpg",
+  name: "Moet Chandon",
+  description: "Garrafa.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WinesAndChampagne/CountryWine.jpg",
+  name: "Country Wine",
+  description: "Garrafa.",
+  peopleQuantity: 2,
+},
+{
+  image: "/Menu/WinesAndChampagne/ChandonBrut.jpg",
+  name: "Chandon Brut",
+  description: "Garrafa.",
+  peopleQuantity: 2,
+},
 ]
 
 ---
@@ -333,15 +338,7 @@ const WinesAndChampagne: Food[] = [
       {
         Dishes.map((dish) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <Image
-            width={1000}
-            height={500}
-            src={dish.image}
-            quality={100}
-            format="jpg"
-            alt="Ícones simples de uma pessoa."
-            class="w-full h-52 md:h-80 lg:h-64 rounded-2xl"
-          />
+        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={dish.image} alt={dish.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{dish.name}</h3>
             <p>{dish.description}</p>
@@ -362,7 +359,7 @@ const WinesAndChampagne: Food[] = [
     </div>
     
   </section>
-
+  
   <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
     <div class="gap-4 flex items-center">
       <Image
@@ -379,7 +376,7 @@ const WinesAndChampagne: Food[] = [
       {
         Drinks.map((drink) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={drink.image} alt="">
+          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={drink.image} alt={drink.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{drink.name}</h3>
             <p>{drink.description}</p>
@@ -400,7 +397,7 @@ const WinesAndChampagne: Food[] = [
     </div>
     
   </section>
-
+  
   <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
     <div class="gap-4 flex items-center">
       <Image
@@ -417,7 +414,7 @@ const WinesAndChampagne: Food[] = [
       {
         Beers.map((beer) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt="">
+        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt={beer.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{beer.name}</h3>
             <p>{beer.description}</p>
@@ -438,7 +435,7 @@ const WinesAndChampagne: Food[] = [
     </div>
     
   </section>
-
+  
   <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
     <div class="gap-4 flex items-center">
       <Image
@@ -455,7 +452,7 @@ const WinesAndChampagne: Food[] = [
       {
         HotBeers.map((beer) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt="">
+        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt={beer.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{beer.name}</h3>
             <p>{beer.description}</p>
@@ -475,7 +472,7 @@ const WinesAndChampagne: Food[] = [
       }
     </div>
   </section>
-
+  
   <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
     <div class="gap-4 flex items-center">
       <Image
@@ -492,7 +489,7 @@ const WinesAndChampagne: Food[] = [
       {
         WhiskyCombos.map((whisky) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={whisky.image} alt="">
+        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={whisky.image} alt={whisky.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{whisky.name}</h3>
             <p>{whisky.description}</p>
@@ -512,7 +509,7 @@ const WinesAndChampagne: Food[] = [
       }
     </div>
   </section>
-
+  
   <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
     <div class="gap-4 flex items-center">
       <Image
@@ -529,8 +526,7 @@ const WinesAndChampagne: Food[] = [
       {
         WinesAndChampagne.map((wine) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={wine.image} alt="">
-
+        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={wine.image} alt={wine.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{wine.name}</h3>
             <p>{wine.description}</p>
