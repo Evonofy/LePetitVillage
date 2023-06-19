@@ -38,7 +38,7 @@ import Button from "../components/Button.astro"
 >
   <Hero />
 
-  <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8 lg:py-16">
+  <section class="hidden-section hide-section-1 max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8 lg:py-16">
     <h2 class="text-center">Você Vai Adorar Os Nossos Serviços</h2>
 
     <div class="gap-8 flex flex-col lg:flex-row">
@@ -97,7 +97,7 @@ import Button from "../components/Button.astro"
 
   </section>
 
-  <section class="max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row lg:items-center px-6 py-8 lg:py-16">
+  <section class="hidden-section hide-section-2 max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row lg:items-center px-6 py-8 lg:py-16">
     <div class="flex flex-col gap-3 lg:gap-4">
       <h2>Experimente Nossa Variedade Culinária</h2>
       <p>Aqui você não vai só passar um tempo em nosso restaurante mas terá uma experiência de começo ao fim para aproveitar ao máximo o que a culinária africana tem a oferecer.</p>
@@ -155,7 +155,7 @@ import Button from "../components/Button.astro"
 
   </section>
 
-  <section class="max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row-reverse px-6 py-8 lg:py-16">
+  <section class="hidden-section hide-section-3 max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row-reverse px-6 py-8 lg:py-16">
     <div class="w-full gap-3 flex flex-col">
       <div class="flex flex-col gap-2">
         <p class="text-yellow-200 font-semibold">Quem É A Petit Village</p>
@@ -177,7 +177,7 @@ import Button from "../components/Button.astro"
     </div>
   </section>
 
-  <section class="max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row px-6 py-8 lg:py-16">
+  <section class="hidden-section hide-section-4 max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row px-6 py-8 lg:py-16">
     <div class="w-full flex flex-col gap-6">
       <h2>Venha Nos Visitar Ou Faça Seu Evento Aqui</h2>
       <p>Verifique nossas informações de contato aqui e faça seus eventos na nossa casa!</p>
@@ -293,25 +293,36 @@ import Button from "../components/Button.astro"
 </Layout>
 
 <style>
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .hide-section-1 {
+    @apply opacity-0 blur-sm translate-x-[-100%] transition-all
+  }
+  .show-section-1 {
+    @apply opacity-100 duration-1000 delay-100 blur-none translate-x-0
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .hide-section-2 {
+    @apply opacity-0 blur-sm translate-x-[100%] transition-all
+  }
+  .show-section-2 {
+    @apply opacity-100 duration-1000 delay-100 blur-none translate-x-0
   }
 
-  .swiper-slide {
-    height: auto !important;
+  .hide-section-3 {
+    @apply opacity-0 blur-sm translate-y-[-30%] transition-all
   }
+  .show-section-3 {
+    @apply opacity-100 duration-1000 delay-100 blur-none translate-y-0
+  }
+
+  .hide-section-4 {
+    @apply opacity-0 blur-sm translate-y-[30%] transition-all
+  }
+  .show-section-4 {
+    @apply opacity-100 duration-1000 delay-100 blur-none translate-y-0
+  }
+
+
+
 
   :root {
     --swiper-pagination-bullet-size: 20px;

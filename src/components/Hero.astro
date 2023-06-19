@@ -6,7 +6,7 @@ import HeroImage from "/public/Hero/LovelyInhameAbobrinha.jpg"
 
 ---
 
-<header class="px-6 py-16 w-full flex items-center justify-center">
+<header class="hidden-hero px-6 py-16 w-full flex items-center justify-center">
   <div class="gap-6 flex flex-col items-center max-w-[1024px] mt-16">
     <div class="gap-3 flex flex-col items-center justify-center">
       <p>Bem-vindo a LePetitVillage ❤️</p>
@@ -36,3 +36,20 @@ import HeroImage from "/public/Hero/LovelyInhameAbobrinha.jpg"
 
 </header>
 
+<style>
+ .hidden-hero {
+    @apply opacity-0 blur-sm transition-all
+  }
+  .show-hero {
+    @apply opacity-100 duration-[2s] delay-100 blur-none
+  }
+</style>
+
+<script>
+  window.onload = () => {
+    const element = document.querySelector('.hidden-hero');
+    if (element) {
+      element.classList.add('show-hero');
+    }
+  }
+</script>
