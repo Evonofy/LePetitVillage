@@ -332,34 +332,25 @@ import Button from "../components/Button.astro"
 </style>
 
 <script defer type="module">
-  import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
-  const desktop = window.matchMedia("(min-width: 1024px)")
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          console.log(entry);
 
-  var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop: true,
-    slidesPerView: desktop.matches ? 2 : 1,
-    spaceBetween: desktop.matches ? 32 : 12,
-  })
+          const index = Array.from(hiddenElements).indexOf(entry.target);
+          const hideClass = `hide-section-${index + 1}`;
+          const showClass = `show-section-${index + 1}`;
 
-  var coursesSwiper = new Swiper(".courses-swiper", {
-    pagination: {
-      el: ".swiper-pagination2",
-      clickable: true,
-    },
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: desktop.matches ? 32 : 12,
-  })
+          if (entry.isIntersecting) {
+              entry.target.classList.add(showClass);
+              entry.target.classList.remove(hideClass);
+          } else {
+              entry.target.classList.add(hideClass);
+              entry.target.classList.remove(showClass);
+          }
+      });
 
-  desktop.addEventListener("change", () => {
-    if (desktop.matches) {
-      swiper.params.slidesPerView = 2
-    } else {
-      swiper.params.slidesPerView = 1
-    }
-  })
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden-section');
+  hiddenElements.forEach((el) => observer.observe(el));
 </script>
