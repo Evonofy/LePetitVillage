@@ -44,13 +44,13 @@ const pages: Page[] = [
     <div class="w-[90px] h-[48px] flex align-center">
       <a href="/" aria-label="LePetit Logo, vá para o início.">
         <Image
-          width={90}
-          height={48}
-          src={LePetitLogo}
-          quality={100}
-          format="webp"
-          alt="Logo da LePetit Village."
-          class="w-[90px] h-[48px]"
+        width={90}
+        height={48}
+        src={LePetitLogo}
+        quality={100}
+        format="webp"
+        alt="Logo da LePetit Village."
+        class="w-[90px] h-[48px]"
         />
       </a>
     </div>
@@ -59,46 +59,73 @@ const pages: Page[] = [
       {
         pages.map((page) => (
         <a
-          data-nav
-          href={page.slug}
-          class:list={"transition-colors hidden md:block text-slate-100 hover:text-red-500"}
+        data-nav
+        href={page.slug}
+        class:list={"transition-colors hidden md:block text-slate-100 hover:text-red-500"}
         >
         {page.name}
       </a>
       ))
     }
     
-      <button class="block bg-red-500 text-slate-100 md:hidden rounded-full px-6 py-3">
-        <a href="/menu">Cardápio</a>
-      </button>
+    <div class="gap-2 flex md:hidden">
+    <a target="_blank" href="https://www.facebook.com/LePetitVillageSPBR/?locale=pt_BR">
+      <div class="h-max rounded-full p-2 stroke-slate-400 border-2 hover:bg-zinc-600 transition-colors">
+        <Image
+        width={24}
+        height={24}
+        quality={50}
+        src="/Icons/Facebook.svg"
+        format="svg"
+        alt="Ícone simples de um calendário."
+        class="w-full"
+        />
+      </div>
+    </a>
+    
+    <a target="_blank" href="https://www.instagram.com/lepetitvillagespbr/">
+      <div class="h-max rounded-full p-2 stroke-slate-400 border-2 hover:bg-zinc-600 transition-colors">
+        <Image
+        width={24}
+        height={24}
+        quality={50}
+        src="/Icons/Instagram.svg"
+        format="svg"
+        alt="Ícone simples de um calendário."
+        class="w-full"
+        />
+      </div>
+    </a>
+
     </div>
   </div>
+</div>
 </nav>
 
 <nav class="mobile-nav w-full fixed z-50 bg-zinc-800 bottom-0 flex md:hidden lg:hidden justify-between p-4">
-    {
-      pages.map((page) => (
-      <div class="flex flex-col items-center">
-        <Image
-          width={32}
-          height={32}
-          src={page.image}
-          quality={100}
-          format="svg"
-          alt="Ícone da navegação."
-          class="h-8"
-        />
-        <a
-          data-nav
-          href={page.slug}
-          class:list={"block lg:hidden text-slate-100 hover:text-red-500"}
-        >
-        {page.name}
-      </a>
-    </div>
-    ))
-  }
-  
+  {
+    pages.map((page) => (
+    <div class="flex flex-col items-center">
+      <Image
+      width={32}
+      height={32}
+      src={page.image}
+      quality={100}
+      format="svg"
+      alt="Ícone da navegação."
+      class="h-8"
+      />
+      <a
+      data-nav
+      href={page.slug}
+      class:list={"block lg:hidden text-slate-100 hover:text-red-500"}
+      >
+      {page.name}
+    </a>
+  </div>
+  ))
+}
+
 </nav>
 
 <style>
@@ -107,7 +134,7 @@ const pages: Page[] = [
   }
   
   .nav-hidden {
-    transform: translateY(calc(-1 * 72px))
+    transform: translateY(calc(-1 * 77px))
   }
 </style>
 
