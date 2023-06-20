@@ -8,11 +8,29 @@ export interface Props {
 }
 
 const { title } = Astro.props
+
+import Consent from "../components/Consent.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag
+        
+        if(localStorage.getItem('consentMode') === null){
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'functionality_storage': 'denied',
+                'security_storage': 'denied',
+            });
+        } else {
+            gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
+        }
+  </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,6 +53,7 @@ const { title } = Astro.props
     <!-- End Google Tag Manager (noscript) -->
     <Navbar/>
     
+    <Consent />
     <main class="overflow-hidden pb-[80px]">
       <slot />
     </main>
