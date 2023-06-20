@@ -8,7 +8,7 @@ import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://etec-jrm.vercel.app",
+  site: "https://lepetit-village.vercel.app",
   integrations: [tailwind({
     config: {
       applyBaseStyles: false
