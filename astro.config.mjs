@@ -4,7 +4,6 @@ import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
 
-import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,5 +16,5 @@ export default defineConfig({
     changefreq: "weekly",
     priority: 0.7,
     lastmod: new Date("2022-02-24")
-  }), prefetch(), solidJs()]
+  }), prefetch()]
 });
