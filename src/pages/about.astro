@@ -9,55 +9,97 @@ import LePetitFront from "/public/About/LePetitFront.jpg"
 ---
 
 <Layout
-  title="Le Petit Village | Restaurante amável com influências africanas."
+title="Le Petit Village | Restaurante amável com influências africanas."
 >
 
-  <BreadcrumbHero
-    title="Sobre Nós"
-    description="Nós acreditamos na necessidade de compartilhar o máximo da culinária Africana para o mundo."
-    page={{ name: "Sobre Nós", href: "/about" }}
-    img="/Hero/Rice.jpg"
-  />
+<BreadcrumbHero
+title="Sobre Nós"
+description="Nós acreditamos na necessidade de compartilhar o máximo da culinária Africana para o mundo."
+page={{ name: "Sobre Nós", href: "/about" }}
+img="/Hero/Rice.jpg"
+/>
 
-  <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
-    <div class="gap-4 flex flex-col">
-        <h2>Nossa História</h2>
-        <Image
-            width={450}
-            height={496}
-            src={LePetitFront}
-            alt="Ícones simples com três pessoas."
-            class="w-full h-[20rem] object-cover"
-        />
+<section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
+  <div class="gap-4 flex flex-col">
+    <h2>Nossa História</h2>
+    <Image
+    width={450}
+    height={496}
+    src={LePetitFront}
+    alt="Ícones simples com três pessoas."
+    class="w-full h-[20rem] object-cover"
+    />
+  </div>
+  <div class="gap-6 flex flex-col lg:flex-row">
+    <div class="w-full gap-2 flex flex-col">
+      <h3>Por Que Fomos Criados</h3>
+      <p>Fomos criados a partir do desejo de formar um restaurante que espalhasse parte da vasta culinária africana para o Brasil. A história brasileira, sem duvidas, está repleta de influências da cultura africana desde a sua formação como nação, então muito além da função puramente gastronômica, temos também a missão de transmitir parte da essência que fundamentou a abrangente história brasileira.</p>
     </div>
-    <div class="gap-6 flex flex-col lg:flex-row">
-        <div class="gap-2 flex flex-col">
-            <h3>Por Que Fomos Criados</h3>
-            <p>Fomos criados a partir do desejo de formar um restaurante que espalhasse parte da vasta culinária africana para o Brasil. A história brasileira, sem duvidas, está repleta de influências da cultura africana desde a sua formação como nação, então muito além da função puramente gastronômica, temos também a missão de transmitir parte da essência que fundamentou a abrangente história brasileira.</p>
-        </div>
-        <div class="gap-2 flex flex-col">
-            <h3>Quando Fomos Criados</h3>
-            <p>Fomos criados oficialmente no dia 26 de fevereiro de 2016, e desde então marcamos nossa marca como um dos restaurantes africanos mais influentes de São Paulo! recebendo ilustres figuras como o Chef <strong>Érick Jacquin</strong>.</p>
-        </div>
+    <div class="w-full gap-2 flex flex-col">
+      <h3>Quando Fomos Criados</h3>
+      <p>Fomos criados oficialmente no dia 26 de fevereiro de 2016, e desde então marcamos nossa marca como um dos restaurantes africanos mais influentes de São Paulo! recebendo ilustres figuras como o Chef <strong>Érick Jacquin</strong>.</p>
     </div>
-  </section>
+  </div>
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/gs8nSmtDZFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-  <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
-    <div class="gap-2 flex flex-col">
-      <h2>Nossos Eventos</h2>
-      <p>Veja fotos de nossos magnifícos eventos e faça parte você também da nossa casa!</p>
+</section>
+
+<section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
+  <div class="gap-2 flex flex-col">
+    <h2>Nossos Eventos</h2>
+    <p>Veja fotos de nossos magnifícos eventos e faça parte você também da nossa casa!</p>
+  </div>
+  <Button link="/events" content="Eventos" />
+  <div class="gap-4 grid">
+    <div class="gap-4 grid grid-cols-2">
+      <Image
+      width={720}
+      height={1280}
+      quality={70}
+      src="/About/Evento1.jpg"
+      format="jpg"
+      alt="Homem de terno colocando comida em seu prato."
+      class="h-[450px] object-cover"
+      />
+      <Image
+      width={720}
+      height={1280}
+      quality={70}
+      src="/About/Evento2.jpg"
+      format="jpg"
+      alt="Mulher de vestido colocando comida em seu prato."
+      class="h-[450px] object-cover"
+      />
     </div>
-    <Button link="/events" content="Eventos" />
-    <div class="gap-4 grid">
-      <div class="gap-4 grid grid-cols-2">
-        <img src="/About/Evento1.jpg" alt="">
-        <img src="/About/Evento2.jpg" alt="">
-      </div>
-      <div class="gap-4 grid grid-cols-3">
-        <img src="/About/Evento3.jpg" alt="">
-        <img src="/About/Evento4.jpg" alt="">
-        <img src="/About/Evento5.jpg" alt="">
-      </div>
+    <div class="gap-4 grid grid-cols-3">
+      <Image
+      width={720}
+      height={1280}
+      quality={70}
+      src="/About/Evento3.jpg"
+      format="jpg"
+      alt="Mulher de vestido e chapéu com comida em seu prato."
+      class="h-[450px] object-cover"
+      />
+      <Image
+      width={720}
+      height={1280}
+      quality={70}
+      src="/About/Evento4.jpg"
+      format="jpg"
+      alt="Homem de microfone."
+      class="h-[450px] object-cover"
+      />
+      <Image
+      width={720}
+      height={1280}
+      quality={70}
+      src="/About/Evento5.jpg"
+      format="jpg"
+      alt="Grupo reunido coletando alimentos."
+      class="h-[450px] object-cover"
+      />
     </div>
-  </section>
+  </div>
+</section>
 </Layout>
