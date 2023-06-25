@@ -16,6 +16,7 @@ export type Food = {
   name: string
   description: string
   peopleQuantity?: number
+  price: number
 }
 
 const Dishes: Food[] = [
@@ -24,66 +25,77 @@ const Dishes: Food[] = [
   name: "Asa De Frango",
   description: "Asas de frango com banana da terra.",
   peopleQuantity: 2,
+  price: 20,
 },
 {
   image: "/Menu/Dishes/Corvina.jpg",
   name: "Corvina",
   description: "Assada da brasa acompanhada.",
   peopleQuantity: 2,
+  price: 50,
 },
 {
   image: "/Menu/Dishes/Tilapia.jpg",
   name: "Tilápia",
   description: "Assada na brasa acompanhada banana da terra frita ou batata.",
   peopleQuantity: 2,
+  price: 50,
 },
 {
   image: "/Menu/Dishes/ArrozComMolhoDeTomate.jpg",
   name: "Arroz Branco Com Molho De Tomate",
   description: "Arroz branco acompanhada com molho de tomate.",
   peopleQuantity: 2,
+  price: 25,
 },
 {
   image: "/Menu/Dishes/DG.jpg",
   name: "DG",
   description: "Banana da terra frita, legumes e pedaços de frango grelhado.",
   peopleQuantity: 2,
+  price: 25,
 },
 {
   image: "/Menu/Dishes/FufuComNdole.jpg",
   name: "Fufu Com Ndole",
   description: "Fufu (Farinha de milho cozida) Ndole, acompanha peixe frito ou carne.",
   peopleQuantity: 2,
+  price: 30,
 },
 {
   image: "/Menu/Dishes/Gombo.jpg",
   name: "Gombo (Quiabo)",
   description: "Quiabo com peixe frito ou carne, acompanha arroz.",
   peopleQuantity: 2,
+  price: 25,
 },
 {
   image: "/Menu/Dishes/FeijãoBrancoComLinguiça.jpg",
   name: "Feijão Branco",
   description: "Feijão branco, tomate, cheiro verde, pimentão, carne moída ou peixe, acompanhado de arroz.",
   peopleQuantity: 2,
+  price: 25,
 },
 {
   image: "/Menu/Dishes/Espinafre.jpg",
   name: "Espinard (Espinafre)",
   description: "Espinafre, tomate, cebola, pedaços de carne ou peixe, camarão seco, banana da terra a vapor ou arroz.",
   peopleQuantity: 2,
+  price: 25,
 },
 {
   image: "/Menu/Dishes/SauceD'Archide.jpg",
   name: "Sauce D'Archide",
   description: "Molho de pasta de amendoim torrado, tomate seco, cheiro verde, acompanha arroz.",
   peopleQuantity: 2,
+  price: 25,
 },
 {
   image: "/Menu/Dishes/SalmãoGrelhado.jpg",
   name: "Salmão Grelhado",
   description: "Salmão grelhado, acompanha batata frita ou arroz.",
   peopleQuantity: 2,
+  price: 35,
 },
 ]
 
@@ -93,48 +105,56 @@ const Drinks: Food[] = [
   name: "Água Mineral",
   description: "Água mineral sem gás ou com gás de 500ml.",
   peopleQuantity: 1,
+  price: 5,
 },
 {
   image: "/Menu/Drinks/ÁguaDeCoco.jpg",
   name: "Água De Coco",
   description: "Água de coco, Puro Coco de um 1 litro.",
   peopleQuantity: 2,
+  price: 20,
 },
 {
   image: "/Menu/Drinks/SchweppesCitrus.jpg",
   name: "Schweppes Citrus",
   description: "Refrigerante Schweppes sabor Citrus em lata de 350ml.",
   peopleQuantity: 1,
+  price: 7,
 },
 {
   image: "/Menu/Drinks/CocaCola.jpg",
   name: "Coca-Cola",
   description: "Refrigerante Coca-Cola em lata de 350ml.",
   peopleQuantity: 1,
+  price: 6,
 },
 {
   image: "/Menu/Drinks/FantaLaranja.webp",
   name: "Fanta (Diferentes Sabores)",
   description: "Refrigerante Fanta sabor Laranja ou Uva em lata de 350ml.",
   peopleQuantity: 1,
+  price: 6,
 },
 {
   image: "/Menu/Drinks/Guaraná.jpg",
   name: "Guaraná Antártica",
   description: "Refrigerante Fanta sabor Laranja ou Uva em lata de 350ml.",
   peopleQuantity: 1,
+  price: 6,
 },
 {
   image: "/Menu/Drinks/ÁguaTônica.jpg",
   name: "Água Tônica",
   description: "Água tônica em lata de 350ml.",
   peopleQuantity: 1,
+  price: 6,
 },
 {
   image: "/Menu/Drinks/RedBull.jpg",
   name: "Red Bull",
   description: "Energético em lata de 350ml.",
   peopleQuantity: 1,
+  price: 15,
 },
 ]
 
@@ -144,48 +164,63 @@ const Beers: Food[] = [
   name: "Smirnoff Ice",
   description: "Long neck de 275ml.",
   peopleQuantity: 1,
+  price: 15,
 },
 {
   image: "/Menu/Beers/BrahmaDuplo.jpg",
   name: "Brahma Duplo Malte",
   description: "Garrafa de 600ml.",
   peopleQuantity: 2,
+  price: 15,
 },
 {
   image: "/Menu/Beers/CervejaSkol.jpg",
   name: "Skol",
   description: "Garrafa de 600ml.",
   peopleQuantity: 2,
+  price: 13,
 },
 {
   image: "/Menu/Beers/SkolBeats.jpg",
   name: "Skol Beats",
   description: "Long neck de 313ml.",
   peopleQuantity: 2,
+  price: 15,
 },
 {
   image: "/Menu/Beers/Heineken.jpg",
   name: "Heineken",
   description: "Garrafa de 600ml.",
   peopleQuantity: 2,
+  price: 15,
+},
+{
+  image: "/Menu/Beers/Heineken.jpg",
+  name: "Heineken",
+  description: "Long Neck de 330ml.",
+  peopleQuantity: 1,
+  price: 15,
 },
 {
   image: "/Menu/Beers/Original.jpg",
   name: "Original",
   description: "Garrafa de 600ml.",
   peopleQuantity: 2,
+  price: 15,
 },
 {
   image: "/Menu/Beers/Budweiser.jpg",
   name: "Budweiser",
   description: "Long neck de 330ml.",
   peopleQuantity: 2,
+  price: 12,
 },
 {
   image: "/Menu/Beers/Corona.jpg",
   name: "Corona",
   description: "Long neck de 330ml.",
   peopleQuantity: 2,
+  price: 17,
 },
 ]
 
@@ -195,30 +230,35 @@ const HotBeers: Food[] = [
   name: "Campari",
   description: "Licor de cor vermelha intensa e sabor amargo. Ele é feito a partir de uma mistura de ervas, frutas e cascas de laranja amarga.",
   peopleQuantity: 2,
+  price: 10,
 },
 {
   image: "/Menu/HotBeers/VodkaSmirnoff.jpg",
   name: "Vodka Smirnoff",
   description: "Utilizada em uma variedade de coquetéis e drinks, sendo conhecida pela sua versatilidade e por misturar-se bem com outros ingredientes, como sucos, refrigerantes e xaropes.",
   peopleQuantity: 2,
+  price: 10,
 },
 {
   image: "/Menu/HotBeers/Dreher.jpg",
   name: "Conhaque Dreher",
   description: "Bebida destilada feita a partir de uvas fermentadas.",
   peopleQuantity: 2,
+  price: 5,
 },
 {
   image: "/Menu/HotBeers/Tequiloka.jpg",
   name: "Tequiloka",
   description: "Bebida alcoólica brasileira que combina os sabores da tequila com a caipirinha, uma bebida tradicional do país.",
   peopleQuantity: 2,
+  price: 5,
 },
 {
   image: "/Menu/HotBeers/Amarula.jpg",
   name: "Amarula",
   description: "Licor sul-africano feito a partir do fruto da árvore maruleira, também conhecida como marula.",
   peopleQuantity: 2,
+  price: 30,
 },
 ]
 
@@ -228,54 +268,63 @@ const WhiskyCombos: Food[] = [
   name: "Passport",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 15,
 },
 {
   image: "/Menu/WhiskyAndCombos/JackDaniels.jpg",
   name: "Jack Daniels",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 300,
 },
 {
   image: "/Menu/WhiskyAndCombos/JohnnieWalkerBlack.jpg",
   name: "Johnnie Walker Black Label",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 25,
 },
 {
   image: "/Menu/WhiskyAndCombos/JohnnieWalkerDoubleBlack.jpg",
   name: "Johnnie Walker Double Black",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 400,
 },
 {
   image: "/Menu/WhiskyAndCombos/JohnnieWalkerGreen.jpg",
   name: "Johnnie Walker Green Label",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 600,
 },
 {
   image: "/Menu/WhiskyAndCombos/JohnnieWalkerPlatinum.jpg",
   name: "Johnnie Walker Platinum Label",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 800,
 },
 {
   image: "/Menu/WhiskyAndCombos/JohnnieWalkerBlue.jpg",
   name: "Jhonnie Walker Blue Label",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 1500,
 },
 {
   image: "/Menu/WhiskyAndCombos/ChivasRegal.jpg",
   name: "Chivas Regal",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 300,
 },
 {
   image: "/Menu/WhiskyAndCombos/BuchanansDeluxe.jpg",
   name: "Buchanan's Deluxe",
   description: "Garrafa, 4 pedaços de gelo de coco e 2 energéticos",
   peopleQuantity: 2,
+  price: 400,
 },
 ]
 
@@ -285,30 +334,35 @@ const WinesAndChampagne: Food[] = [
   name: "Marcus James Reservado",
   description: "Garrafa.",
   peopleQuantity: 2,
+  price: 60,
 },
 {
   image: "/Menu/WinesAndChampagne/PasoLosValles.jpg",
   name: "Paso Los Valles Cabernet Sauvignon",
   description: "Garrafa.",
   peopleQuantity: 2,
+  price: 70,
 },
 {
   image: "/Menu/WinesAndChampagne/MoetChandon.jpg",
   name: "Moet Chandon",
   description: "Garrafa.",
   peopleQuantity: 2,
+  price: 700,
 },
 {
   image: "/Menu/WinesAndChampagne/CountryWine.jpg",
   name: "Country Wine",
   description: "Garrafa.",
   peopleQuantity: 2,
+  price: 50,
 },
 {
   image: "/Menu/WinesAndChampagne/ChandonBrut.jpg",
   name: "Chandon Brut",
   description: "Garrafa.",
   peopleQuantity: 2,
+  price: 250,
 },
 ]
 
@@ -338,19 +392,22 @@ const WinesAndChampagne: Food[] = [
       {
         Dishes.map((dish) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={dish.image} alt={dish.description}>
+          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={dish.image} alt={dish.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{dish.name}</h3>
             <p>{dish.description}</p>
-            <div class="gap-3 flex items-center">
-              <Image
-              width={32}
-              height={32}
-              src={Person}
-              alt="Ícones simples uma pessoa."
-              class="w-[32px] h-full object-cover"
-              />
-              <p class="font-semibold">{dish.peopleQuantity} Pessoas</p>
+            <div class="gap-3 flex items-center justify-between">
+              <p class="font-semibold">R$ {dish.price}</p>
+              <div class="gap-3 flex items-center">
+                <Image
+                width={32}
+                height={32}
+                src={Person}
+                alt="Ícones simples uma pessoa."
+                class="w-[32px] h-full object-cover"
+                />
+                <p class="font-semibold">{dish.peopleQuantity} Pessoas</p>
+              </div>
             </div>
           </div>
         </div>
@@ -380,15 +437,19 @@ const WinesAndChampagne: Food[] = [
           <div class="w-full gap-2 flex flex-col">
             <h3>{drink.name}</h3>
             <p>{drink.description}</p>
-            <div class="gap-3 flex items-center">
-              <Image
-              width={32}
-              height={32}
-              src={Person}
-              alt="Ícones simples de uma pessoa."
-              class="w-[32px] h-full object-cover"
-              />
-              <p class="font-semibold">{drink.peopleQuantity} Pessoas</p>
+            <div class="w-full gap-3 flex items-center justify-between">
+              <p class="font-semibold">R$ {drink.price}</p>
+              <div class="gap-3 flex items-center">
+                <Image
+                width={32}
+                height={32}
+                src={Person}
+                alt="Ícones simples de uma pessoa."
+                class="w-[32px] h-full object-cover"
+                />
+                <p class="font-semibold">{drink.peopleQuantity} Pessoas</p>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -414,20 +475,24 @@ const WinesAndChampagne: Food[] = [
       {
         Beers.map((beer) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt={beer.description}>
+          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt={beer.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{beer.name}</h3>
             <p>{beer.description}</p>
-            <div class="gap-3 flex items-center">
-              <Image
-              width={32}
-              height={32}
-              src={Person}
-              alt="Ícones simples de uma pessoa."
-              class="w-[32px] h-full object-cover"
-              />
-              <p class="font-semibold">{beer.peopleQuantity} Pessoas</p>
+            <div class="gap-3 flex items-center justify-between">
+              <p class="font-semibold">R$ {beer.price}</p>
+              <div class="gap-3 flex items-center">
+                <Image
+                width={32}
+                height={32}
+                src={Person}
+                alt="Ícones simples uma pessoa."
+                class="w-[32px] h-full object-cover"
+                />
+                <p class="font-semibold">{beer.peopleQuantity} Pessoas</p>
+              </div>
             </div>
+
           </div>
         </div>
         ))
@@ -452,20 +517,24 @@ const WinesAndChampagne: Food[] = [
       {
         HotBeers.map((beer) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt={beer.description}>
+          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={beer.image} alt={beer.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{beer.name}</h3>
             <p>{beer.description}</p>
-            <div class="gap-3 flex items-center">
-              <Image
-              width={32}
-              height={32}
-              src={Person}
-              alt="Ícones simples de uma pessoa."
-              class="w-[32px] h-full object-cover"
-              />
-              <p class="font-semibold">{beer.peopleQuantity} Pessoas</p>
+            <div class="gap-3 flex items-center justify-between">
+              <p class="font-semibold">R$ {beer.price}</p>
+              <div class="gap-3 flex items-center">
+                <Image
+                width={32}
+                height={32}
+                src={Person}
+                alt="Ícones simples uma pessoa."
+                class="w-[32px] h-full object-cover"
+                />
+                <p class="font-semibold">{beer.peopleQuantity} Pessoas</p>
+              </div>
             </div>
+
           </div>
         </div>
         ))
@@ -489,20 +558,24 @@ const WinesAndChampagne: Food[] = [
       {
         WhiskyCombos.map((whisky) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={whisky.image} alt={whisky.description}>
+          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={whisky.image} alt={whisky.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{whisky.name}</h3>
             <p>{whisky.description}</p>
-            <div class="gap-3 flex items-center">
-              <Image
-              width={32}
-              height={32}
-              src={Person}
-              alt="Ícones simples de uma pessoa."
-              class="w-[32px] h-full object-cover"
-              />
-              <p class="font-semibold">{whisky.peopleQuantity} Pessoas</p>
+            <div class="gap-3 flex items-center justify-between">
+              <p class="font-semibold">R$ {whisky.price}</p>
+              <div class="gap-3 flex items-center">
+                <Image
+                width={32}
+                height={32}
+                src={Person}
+                alt="Ícones simples uma pessoa."
+                class="w-[32px] h-full object-cover"
+                />
+                <p class="font-semibold">{whisky.peopleQuantity} Pessoas</p>
+              </div>
             </div>
+
           </div>
         </div>
         ))
@@ -526,20 +599,24 @@ const WinesAndChampagne: Food[] = [
       {
         WinesAndChampagne.map((wine) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-        <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={wine.image} alt={wine.description}>
+          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={wine.image} alt={wine.description}>
           <div class="w-full gap-2 flex flex-col">
             <h3>{wine.name}</h3>
             <p>{wine.description}</p>
-            <div class="gap-3 flex items-center">
-              <Image
-              width={32}
-              height={32}
-              src={Person}
-              alt="Ícones simples de uma pessoa."
-              class="w-[32px] h-full object-cover"
-              />
-              <p class="font-semibold">{wine.peopleQuantity} Pessoas</p>
+            <div class="gap-3 flex items-center justify-between">
+              <p class="font-semibold">R$ {wine.price}</p>
+              <div class="gap-3 flex items-center">
+                <Image
+                width={32}
+                height={32}
+                src={Person}
+                alt="Ícones simples uma pessoa."
+                class="w-[32px] h-full object-cover"
+                />
+                <p class="font-semibold">{wine.peopleQuantity} Pessoas</p>
+              </div>
             </div>
+
           </div>
         </div>
         ))
