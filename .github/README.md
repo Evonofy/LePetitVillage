@@ -1,6 +1,7 @@
-# [🦐 Le Petit Village](https://lepetitvillage.com.br/) <!-- omit in toc --> 
-
 <div align="center">
+
+   # [🦐 Le Petit Village](https://lepetitvillage.com.br/) <!-- omit in toc --> 
+
 </div>
 
 🦐 Um site institucional de um restaurante com influências africanas.
@@ -45,4 +46,4 @@ Criar uma página institucional elegante e caseira com essenciais africanas para
 
 - [Yarn](https://yarnpkg.com/)
 
-[⬆ De Volta Ao Topo](#-le-petit-village)
+[⬆ De Volta Ao Topo](#-le-petit-village-)
