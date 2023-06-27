@@ -202,14 +202,14 @@ const Beers: Food[] = [
   price: 15,
 },
 {
-  image: "/Menu/Beers/Original.jpg",
+  image: "/Menu/Beers/Original.webp",
   name: "Original",
   description: "Garrafa de 600ml.",
   peopleQuantity: 2,
   price: 15,
 },
 {
-  image: "/Menu/Beers/Budweiser.jpg",
+  image: "/Menu/Beers/Budweiser.webp",
   name: "Budweiser",
   description: "Long neck de 330ml.",
   peopleQuantity: 2,
@@ -337,7 +337,7 @@ const WinesAndChampagne: Food[] = [
   price: 60,
 },
 {
-  image: "/Menu/WinesAndChampagne/PasoLosValles.jpg",
+  image: "/Menu/WinesAndChampagne/PasoLosValles.png",
   name: "Paso Los Valles Cabernet Sauvignon",
   description: "Garrafa.",
   peopleQuantity: 2,
@@ -392,7 +392,15 @@ const WinesAndChampagne: Food[] = [
       {
         Dishes.map((dish) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={dish.image} alt={dish.description}>
+            <Image
+              width={1000}
+              height={500}
+              format="jpg"
+              src={dish.image}
+              alt={dish.description}
+              class="w-full h-52 rounded-2xl object-cover"
+            />
+         
           <div class="w-full gap-2 flex flex-col">
             <h3>{dish.name}</h3>
             <p>{dish.description}</p>
@@ -433,7 +441,14 @@ const WinesAndChampagne: Food[] = [
       {
         Drinks.map((drink) => (
         <div class="w-full h-full gap-4 flex flex-col items-center">
-          <img class="w-full h-52 md:h-80 lg:h-64 rounded-2xl object-cover" src={drink.image} alt={drink.description}>
+            <Image
+              width={1000}
+              height={800}
+              format="jpg"
+              src={drink.image}
+              alt={drink.description}
+              class="w-full h-72 rounded-2xl object-cover"
+            />
           <div class="w-full gap-2 flex flex-col">
             <h3>{drink.name}</h3>
             <p>{drink.description}</p>
