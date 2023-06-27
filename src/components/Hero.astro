@@ -3,21 +3,30 @@ import { Image } from "@astrojs/image/components"
 import Button from "../components/Button.astro"
 
 import HeroImage from "/public/Hero/LovelyInhameAbobrinha.jpg"
-
 ---
 
-<header class="hidden-hero px-6 py-16 w-full flex items-center justify-center">
-  <div class="gap-6 flex flex-col items-center max-w-[1024px] mt-16">
-    <div class="gap-3 flex flex-col items-center justify-center">
+<header class="hidden-hero flex w-full items-center justify-center px-6 py-16">
+  <div class="mt-16 flex max-w-[1024px] flex-col items-center gap-6">
+    <div class="flex flex-col items-center justify-center gap-3">
       <p>Bem-vindo a LePetitVillage ❤️</p>
       <h1 class="text-center">Comida Africana Que Você Vai Amar</h1>
     </div>
     <p class="flex flex-col text-center">
-      <span>Nós celebramosas diversas e saborosas tradições culinárias da África.</span>
-      <br>
-      <span>Nossos talentosos chefs combinam habilmente receitas tradicionais com técnicas modernas para criar uma experiência culinária única e inesquecível.</span>
-      <br>
-      <span>Mime-se com uma grande variedade de pratos de dar água na boca que mostram os sabores vibrantes, especiarias aromáticas e ingredientes frescos que definem a culinária africana.</span>
+      <span
+        >Nós celebramosas diversas e saborosas tradições culinárias da África.</span
+      >
+      <br />
+      <span
+        >Nossos talentosos chefs combinam habilmente receitas tradicionais com
+        técnicas modernas para criar uma experiência culinária única e
+        inesquecível.</span
+      >
+      <br />
+      <span
+        >Mime-se com uma grande variedade de pratos de dar água na boca que
+        mostram os sabores vibrantes, especiarias aromáticas e ingredientes
+        frescos que definem a culinária africana.</span
+      >
     </p>
 
     <Button link="/menu" content="Cardápio" />
@@ -31,25 +40,23 @@ import HeroImage from "/public/Hero/LovelyInhameAbobrinha.jpg"
         class="m-auto h-full w-full object-cover"
       />
     </div>
-    
   </div>
-
 </header>
 
 <style>
- .hidden-hero {
-    @apply opacity-0 blur-sm transition-all
+  .hidden-hero {
+    @apply opacity-0 blur-sm transition-all;
   }
   .show-hero {
-    @apply opacity-100 duration-[2s] delay-100 blur-none
+    @apply opacity-100 blur-none delay-100 duration-[2s];
   }
 </style>
 
 <script>
   window.onload = () => {
-    const element = document.querySelector('.hidden-hero');
+    const element = document.querySelector(".hidden-hero")
     if (element) {
-      element.classList.add('show-hero');
+      element.classList.add("show-hero")
     }
   }
 </script>

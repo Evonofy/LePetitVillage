@@ -9,132 +9,143 @@ export type Page = {
 }
 
 const pages: Page[] = [
-{
-  name: "Início",
-  slug: "/",
-  image: "/Icons/House.svg"
-},
-{
-  name: "Menu",
-  slug: "/menu",
-  image: "/Icons/Menu.svg"
-},
-{
-  name: "Eventos",
-  slug: "/events",
-  image: "/Icons/Events.svg"
-},
-{
-  name: "Sobre",
-  slug: "/about",
-  image: "/Icons/About.svg"
-},
-{
-  name: "Contato",
-  slug: "/contact",
-  image: "/Icons/Contact.svg"
-},
-
+  {
+    name: "Início",
+    slug: "/",
+    image: "/Icons/House.svg",
+  },
+  {
+    name: "Menu",
+    slug: "/menu",
+    image: "/Icons/Menu.svg",
+  },
+  {
+    name: "Eventos",
+    slug: "/events",
+    image: "/Icons/Events.svg",
+  },
+  {
+    name: "Sobre",
+    slug: "/about",
+    image: "/Icons/About.svg",
+  },
+  {
+    name: "Contato",
+    slug: "/contact",
+    image: "/Icons/Contact.svg",
+  },
 ]
-
 ---
 
-<nav class="desktop-nav transition-all fixed top-0 md:top-0 z-30 w-full bg-zinc-800">
-  <div class="m-auto flex max-w-5xl items-center justify-between px-6 py-3 lg:px-6">
-    <div class="w-[90px] h-[48px] flex align-center">
+<nav
+  class="desktop-nav fixed top-0 z-30 w-full bg-zinc-800 transition-all md:top-0"
+>
+  <div
+    class="m-auto flex max-w-5xl items-center justify-between px-6 py-3 lg:px-6"
+  >
+    <div class="align-center flex h-[48px] w-[90px]">
       <a href="/" aria-label="LePetit Logo, vá para o início.">
         <Image
-        width={90}
-        height={48}
-        src={LePetitLogo}
-        quality={100}
-        format="webp"
-        alt="Logo da LePetit Village."
-        class="w-[90px] h-[48px]"
+          width={90}
+          height={48}
+          src={LePetitLogo}
+          quality={100}
+          format="webp"
+          alt="Logo da LePetit Village."
+          class="h-[48px] w-[90px]"
         />
       </a>
     </div>
-    
+
     <div class="flex items-center gap-6">
       {
         pages.map((page) => (
-        <a
-        data-nav
-        href={page.slug}
-        class:list={"transition-colors hidden md:block text-slate-100 hover:text-red-500"}
-        >
-        {page.name}
-      </a>
-      ))
-    }
-    
-    <div class="gap-2 flex md:hidden">
-    <a target="_blank" href="https://www.facebook.com/LePetitVillageSPBR/?locale=pt_BR">
-      <div class="h-max rounded-full p-2 stroke-slate-400 border-2 hover:bg-zinc-600 transition-colors">
-        <Image
-        width={24}
-        height={24}
-        quality={50}
-        src="/Icons/Facebook.svg"
-        format="svg"
-        alt="Ícone simples de um calendário."
-        class="w-full"
-        />
-      </div>
-    </a>
-    
-    <a target="_blank" href="https://www.instagram.com/lepetitvillagespbr/">
-      <div class="h-max rounded-full p-2 stroke-slate-400 border-2 hover:bg-zinc-600 transition-colors">
-        <Image
-        width={24}
-        height={24}
-        quality={50}
-        src="/Icons/Instagram.svg"
-        format="svg"
-        alt="Ícone simples de um calendário."
-        class="w-full"
-        />
-      </div>
-    </a>
+          <a
+            data-nav
+            href={page.slug}
+            class:list={
+              "transition-colors hidden md:block text-slate-100 hover:text-red-500"
+            }
+          >
+            {page.name}
+          </a>
+        ))
+      }
 
+      <div class="flex gap-2 md:hidden">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/LePetitVillageSPBR/?locale=pt_BR"
+        >
+          <div
+            class="h-max rounded-full border-2 stroke-slate-400 p-2 transition-colors hover:bg-zinc-600"
+          >
+            <Image
+              width={24}
+              height={24}
+              quality={50}
+              src="/Icons/Facebook.svg"
+              format="svg"
+              alt="Ícone simples de um calendário."
+              class="w-full"
+            />
+          </div>
+        </a>
+
+        <a target="_blank" href="https://www.instagram.com/lepetitvillagespbr/">
+          <div
+            class="h-max rounded-full border-2 stroke-slate-400 p-2 transition-colors hover:bg-zinc-600"
+          >
+            <Image
+              width={24}
+              height={24}
+              quality={50}
+              src="/Icons/Instagram.svg"
+              format="svg"
+              alt="Ícone simples de um calendário."
+              class="w-full"
+            />
+          </div>
+        </a>
+      </div>
     </div>
   </div>
-</div>
 </nav>
 
-<nav class="mobile-nav w-full fixed z-50 bg-zinc-800 bottom-0 flex md:hidden lg:hidden justify-between p-4">
+<nav
+  class="mobile-nav fixed bottom-0 z-50 flex w-full justify-between bg-zinc-800 p-4 md:hidden lg:hidden"
+>
   {
     pages.map((page) => (
-    <div class="flex flex-col items-center">
-      <Image
-      width={32}
-      height={32}
-      src={page.image}
-      quality={100}
-      format="svg"
-      alt="Ícone da navegação."
-      class="h-8"
-      />
-      <a
-      data-nav
-      href={page.slug}
-      class:list={"block lg:hidden text-slate-100 hover:text-red-500"}
-      >
-      {page.name}
-    </a>
-  </div>
-  ))
-}
-
+      <div class="flex flex-col items-center">
+        <Image
+          width={32}
+          height={32}
+          src={page.image}
+          quality={100}
+          format="svg"
+          alt="Ícone da navegação."
+          class="h-8"
+        />
+        <a
+          data-nav
+          href={page.slug}
+          class:list={"block lg:hidden text-slate-100 hover:text-red-500"}
+        >
+          {page.name}
+        </a>
+      </div>
+    ))
+  }
 </nav>
 
 <style>
   .selected {
     @apply !text-primary-base;
   }
-  
+
   .nav-hidden {
-    transform: translateY(calc(-1 * 77px))
+    transform: translateY(calc(-1 * 77px));
   }
 </style>
 
@@ -143,27 +154,27 @@ const pages: Page[] = [
     const pathname = location.pathname
     /** @type {HTMLAnchorElement[]} */
     const links = document.querySelectorAll("nav a[data-nav]")
-    
+
     links.forEach((link) => {
       if (link.pathname === pathname) {
         link.classList.add("selected")
       }
     })
   }
-  
+
   document.addEventListener("DOMContentLoaded", main)
-  
+
   // Auto-hides navbar
   const nav = document.querySelector(".desktop-nav")
   let lastScroll = window.scrollY
-  
+
   window.addEventListener("scroll", () => {
     if (lastScroll < window.scrollY) {
-      nav.classList.add('nav-hidden')
+      nav.classList.add("nav-hidden")
     } else {
-      nav.classList.remove('nav-hidden')
+      nav.classList.remove("nav-hidden")
     }
-    
+
     lastScroll = window.scrollY
   })
 </script>

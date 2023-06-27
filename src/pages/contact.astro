@@ -12,96 +12,107 @@ import Phone from "/public/Icons/Phone.svg"
 
 <Layout title="Contato">
   <BreadcrumbHero
-  title="Contato"
-  description="Saiba onde estamos, dê o seu feedback ou tire dúvidas conosco por aqui."
-  page={{ name: "Contato", href: "/contact" }}
-  img="/Hero/Soup.jpg"
+    title="Contato"
+    description="Saiba onde estamos, dê o seu feedback ou tire dúvidas conosco por aqui."
+    page={{ name: "Contato", href: "/contact" }}
+    img="/Hero/Soup.jpg"
   />
-  
-  <section class="max-w-[1024px] m-auto gap-16 flex flex-col lg:flex-row px-6 py-8 lg:py-16">
-    <div class="gap-4 lg:gap-8 flex flex-col">
-      <div class="w-full gap-6 flex flex-col">
+
+  <section
+    class="m-auto flex max-w-[1024px] flex-col gap-16 px-6 py-8 lg:flex-row lg:py-16"
+  >
+    <div class="flex flex-col gap-4 lg:gap-8">
+      <div class="flex w-full flex-col gap-6">
         <h2>Localização</h2>
-        <div class="gap-3 flex">
+        <div class="flex gap-3">
           <Image
-          width={32}
-          height={32}
-          quality={50}
-          src={Pin}
-          alt="Ícone simples de um alfinete de mapa."
-          class="w-[32px] h-[32px] object-cover"
+            width={32}
+            height={32}
+            quality={50}
+            src={Pin}
+            alt="Ícone simples de um alfinete de mapa."
+            class="h-[32px] w-[32px] object-cover"
           />
-          <p>R. Marquês de Itu, 252 - Vila Buarque, São Paulo - SP, 01220-010</p>
+          <p>
+            R. Marquês de Itu, 252 - Vila Buarque, São Paulo - SP, 01220-010
+          </p>
         </div>
-        <div class="gap-3 flex">
+        <div class="flex gap-3">
           <Image
-          width={32}
-          height={32}
-          quality={50}
-          src={Calendar}
-          alt="Ícone simples de um calendário."
-          class="w-[32px] h-[32px] object-cover"
+            width={32}
+            height={32}
+            quality={50}
+            src={Calendar}
+            alt="Ícone simples de um calendário."
+            class="h-[32px] w-[32px] object-cover"
           />
-          <div class="gap-3 flex flex-col lg:flex-row">
+          <div class="flex flex-col gap-3 lg:flex-row">
             <p class="w-full">Segunda-Feira - Sábado</p>
             <p class="w-full">Aberto Apenas No Último Domingo Do Mês</p>
           </div>
         </div>
-        <div class="gap-3 flex items-center">
+        <div class="flex items-center gap-3">
           <Image
-          width={32}
-          height={32}
-          quality={50}
-          src={Hourglass}
-          alt="Ícone simples de uma ampulheta."
-          class="w-[32px] h-[32px] object-cover"
+            width={32}
+            height={32}
+            quality={50}
+            src={Hourglass}
+            alt="Ícone simples de uma ampulheta."
+            class="h-[32px] w-[32px] object-cover"
           />
           <p>12h00 - 02h00</p>
         </div>
       </div>
-      <div class="gap-6 lg:gap-8 flex flex-col lg:flex-row">
-        <div class="w-full gap-6 flex flex-col">
+      <div class="flex flex-col gap-6 lg:flex-row lg:gap-8">
+        <div class="flex w-full flex-col gap-6">
           <h2>Comunicação</h2>
-          <div class="gap-3 flex items-center">
+          <div class="flex items-center gap-3">
             <Image
-            width={32}
-            height={32}
-            quality={50}
-            src={Email}
-            alt="Ícone simples de um calendário."
-            class="w-[32px] h-full object-cover"
+              width={32}
+              height={32}
+              quality={50}
+              src={Email}
+              alt="Ícone simples de um calendário."
+              class="h-full w-[32px] object-cover"
             />
-            <a href="mailto:lepetitvillagespbr@gmail.com">lepetitvillagespbr@gmail.com</a>
+            <a href="mailto:lepetitvillagespbr@gmail.com"
+              >lepetitvillagespbr@gmail.com</a
+            >
           </div>
-          <div class="gap-3 flex items-center">
+          <div class="flex items-center gap-3">
             <Image
-            width={32}
-            height={32}
-            quality={50}
-            src={Phone}
-            alt="Ícone simples de um calendário."
-            class="w-[32px] h-full object-cover"
+              width={32}
+              height={32}
+              quality={50}
+              src={Phone}
+              alt="Ícone simples de um calendário."
+              class="h-full w-[32px] object-cover"
             />
             <p>(11) 3225 - 0234</p>
           </div>
-          <div class="gap-3 flex items-center">
+          <div class="flex items-center gap-3">
             <Image
-            width={32}
-            height={32}
-            quality={50}
-            src={Phone}
-            alt="Ícone simples de um calendário."
-            class="w-[32px] h-full object-cover"
+              width={32}
+              height={32}
+              quality={50}
+              src={Phone}
+              alt="Ícone simples de um calendário."
+              class="h-full w-[32px] object-cover"
             />
             <p>(11) 987379640</p>
           </div>
         </div>
       </div>
-      
     </div>
-    <div class="w-full h-full flex">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.690537299699!2d-46.64938722396967!3d-23.54363036094249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5848b135ae3d%3A0xa4e954a427e17fc0!2sR.%20Marqu%C3%AAs%20de%20Itu%2C%20252%20-%20Vila%20Buarque%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001220-010!5e0!3m2!1spt-BR!2sbr!4v1687238371731!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  
-</section>
+    <div class="flex h-full w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.690537299699!2d-46.64938722396967!3d-23.54363036094249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5848b135ae3d%3A0xa4e954a427e17fc0!2sR.%20Marqu%C3%AAs%20de%20Itu%2C%20252%20-%20Vila%20Buarque%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001220-010!5e0!3m2!1spt-BR!2sbr!4v1687238371731!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
 </Layout>

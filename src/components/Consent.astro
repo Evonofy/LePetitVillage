@@ -1,67 +1,104 @@
-<div id="cookie-consent-banner" class="cookie-consent-banner fixed z-50 bottom-0 right-0 hidden gap-4 flex flex-col items-center bg-zinc-700 p-6 lg:m-6 lg:rounded-2xl w-full lg:w-1/2">
-    <h3>Configurações Dos Cookies</h3>
-    <p class="text-left lg:text-center">Usamos cookies para provermos as melhores experiências para você. Nós também conseguimos entender o seu comportamento no site para melhorarmos ele para você.</p>
+<div
+  id="cookie-consent-banner"
+  class="cookie-consent-banner fixed bottom-0 right-0 z-50 flex hidden w-full flex-col items-center gap-4 bg-zinc-700 p-6 lg:m-6 lg:w-1/2 lg:rounded-2xl"
+>
+  <h3>Configurações Dos Cookies</h3>
+  <p class="text-left lg:text-center">
+    Usamos cookies para provermos as melhores experiências para você. Nós também
+    conseguimos entender o seu comportamento no site para melhorarmos ele para
+    você.
+  </p>
 
-    <div class="cookie-consent-options gap-4 flex flex-col lg:flex-row">
-      <label class="gap-2 flex items-center"><input id="consent-necessary" type="checkbox" value="Necessary" checked disabled>Necessário</label>
-      <label class="gap-2 flex items-center"><input id="consent-analytics" type="checkbox" value="Analytics" checked>Analíticos</label>
-      <label class="gap-2 flex items-center"><input id="consent-marketing" type="checkbox" value="Marketing">Marketing</label>
-    </div>
-    <div class="gap-4 flex">
-      <button id="btn-accept-all" class="cookie-consent-button btn-success">Aceitar Tudo</button>
-      <button id="btn-accept-some" class="cookie-consent-button btn-outline">Aceitar Seleção</button>
-      <button id="btn-reject-all" class="cookie-consent-button btn-grayscale">Rejeitar Tudo</button>
-    </div>
+  <div class="cookie-consent-options flex flex-col gap-4 lg:flex-row">
+    <label class="flex items-center gap-2"
+      ><input
+        id="consent-necessary"
+        type="checkbox"
+        value="Necessary"
+        checked
+        disabled
+      />Necessário</label
+    >
+    <label class="flex items-center gap-2"
+      ><input
+        id="consent-analytics"
+        type="checkbox"
+        value="Analytics"
+        checked
+      />Analíticos</label
+    >
+    <label class="flex items-center gap-2"
+      ><input
+        id="consent-marketing"
+        type="checkbox"
+        value="Marketing"
+      />Marketing</label
+    >
+  </div>
+  <div class="flex gap-4">
+    <button id="btn-accept-all" class="cookie-consent-button btn-success"
+      >Aceitar Tudo</button
+    >
+    <button id="btn-accept-some" class="cookie-consent-button btn-outline"
+      >Aceitar Seleção</button
+    >
+    <button id="btn-reject-all" class="cookie-consent-button btn-grayscale"
+      >Rejeitar Tudo</button
+    >
+  </div>
 </div>
 
 <script defer is:inline>
-  
-
-//   if(localStorage.getItem('consentMode') === null) {
-//     document.querySelector("#cookie-consent-banner").style.display = "flex"
-//   } 
+  //   if(localStorage.getItem('consentMode') === null) {
+  //     document.querySelector("#cookie-consent-banner").style.display = "flex"
+  //   }
 
   function hideBanner() {
-    document.getElementById('cookie-consent-banner').style.display = 'none';
+    document.getElementById("cookie-consent-banner").style.display = "none"
   }
 
-  if(localStorage.getItem('consentMode') === null) {
-    
-    document.getElementById('btn-accept-all').addEventListener('click', function() {
-      setConsent({
-        necessary: true,
-        analytics: true,
-        marketing: true
-      });
-      hideBanner();
-    });
-    document.getElementById('btn-accept-some').addEventListener('click', function() {
-      setConsent({
-        necessary: true,
-        analytics: document.querySelector('#consent-analytics').checked,
-        marketing: document.querySelector('#consent-marketing').checked
-      });
-      hideBanner();
-    });
-    document.getElementById('btn-reject-all').addEventListener('click', function() {
-      setConsent({
-        necessary: false,
-        analytics: false,
-        marketing: false
-      });
-      hideBanner();
-    });
-    document.getElementById('cookie-consent-banner').style.display = 'flex';
+  if (localStorage.getItem("consentMode") === null) {
+    document
+      .getElementById("btn-accept-all")
+      .addEventListener("click", function () {
+        setConsent({
+          necessary: true,
+          analytics: true,
+          marketing: true,
+        })
+        hideBanner()
+      })
+    document
+      .getElementById("btn-accept-some")
+      .addEventListener("click", function () {
+        setConsent({
+          necessary: true,
+          analytics: document.querySelector("#consent-analytics").checked,
+          marketing: document.querySelector("#consent-marketing").checked,
+        })
+        hideBanner()
+      })
+    document
+      .getElementById("btn-reject-all")
+      .addEventListener("click", function () {
+        setConsent({
+          necessary: false,
+          analytics: false,
+          marketing: false,
+        })
+        hideBanner()
+      })
+    document.getElementById("cookie-consent-banner").style.display = "flex"
   }
-  
+
   function setConsent(consent) {
     const consentMode = {
-      'functionality_storage': consent.necessary ? 'granted' : 'denied',
-      'security_storage': consent.necessary ? 'granted' : 'denied',
-      'ad_storage': consent.marketing ? 'granted' : 'denied',
-      'analytics_storage': consent.analytics ? 'granted' : 'denied',
-    };
-    gtag('consent', 'update', consent);  
-    localStorage.setItem('consentMode', JSON.stringify(consentMode));
+      functionality_storage: consent.necessary ? "granted" : "denied",
+      security_storage: consent.necessary ? "granted" : "denied",
+      ad_storage: consent.marketing ? "granted" : "denied",
+      analytics_storage: consent.analytics ? "granted" : "denied",
+    }
+    gtag("consent", "update", consent)
+    localStorage.setItem("consentMode", JSON.stringify(consentMode))
   }
 </script>

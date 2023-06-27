@@ -15,7 +15,7 @@ import Champagne from "/public/Icons/Champagne.svg"
 import Leaf from "/public/Icons/Leaf.svg"
 import YellowCookingPot from "/public/Icons/CookingPotYELLOW.svg"
 
-// Third Section 
+// Third Section
 import ChefSimiling from "/public/Home/ChefSmiling.jpg"
 
 // Fourth Section
@@ -30,7 +30,6 @@ import DinningTable from "/public/Home/DinningDecoratedTable.jpg"
 
 import Hero from "@/components/Hero.astro"
 import Button from "../components/Button.astro"
-
 ---
 
 <Layout
@@ -38,32 +37,39 @@ import Button from "../components/Button.astro"
 >
   <Hero />
 
-  <section class="hidden-section hide-section-1 max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8 lg:py-16">
+  <section
+    class="hidden-section hide-section-1 m-auto flex max-w-[1024px] flex-col gap-6 px-6 py-8 lg:py-16"
+  >
     <h2 class="text-center">Você Vai Adorar Os Nossos Serviços</h2>
 
-    <div class="gap-8 flex flex-col lg:flex-row">
+    <div class="flex flex-col gap-8 lg:flex-row">
       <div class="w-full">
-          <Image
-            width={1920}
-            height={1280}
-            quality={50}
-            src={SectionOne}
-            alt="Culinária africana."
-            class="w-full h-full object-cover"
-          />
+        <Image
+          width={1920}
+          height={1280}
+          quality={50}
+          src={SectionOne}
+          alt="Culinária africana."
+          class="h-full w-full object-cover"
+        />
       </div>
-      <ul class="h-full flex flex-col gap-8">
+      <ul class="flex h-full flex-col gap-8">
         <li class="flex gap-4 lg:gap-8">
           <Image
             width={52}
             height={52}
             src={CookingPot}
             alt="Panela de cozinha quente."
-            class="w-[52px] lg:h-[52px] h-full object-cover"
+            class="h-full w-[52px] object-cover lg:h-[52px]"
           />
           <div class="flex flex-col gap-3">
             <p class="font-semibold">Culinária</p>
-            <p>Nosso cardápio celebra tradições culinárias africanas com receitas tradicionais e técnicas modernas. Oferecemos pratos deliciosos com sabores vibrantes, especiarias aromáticas e ingredientes frescos, proporcionando uma experiência culinária única e inesquecível.</p>
+            <p>
+              Nosso cardápio celebra tradições culinárias africanas com receitas
+              tradicionais e técnicas modernas. Oferecemos pratos deliciosos com
+              sabores vibrantes, especiarias aromáticas e ingredientes frescos,
+              proporcionando uma experiência culinária única e inesquecível.
+            </p>
           </div>
         </li>
         <li class="flex gap-4 lg:gap-8">
@@ -72,11 +78,16 @@ import Button from "../components/Button.astro"
             height={52}
             src={Stool}
             alt="Pequeno banco alto."
-            class="w-[52px] lg:h-[52px] h-full object-cover"
+            class="h-full w-[52px] object-cover lg:h-[52px]"
           />
           <div class="flex flex-col gap-3">
             <p class="font-semibold">Atmosfera</p>
-            <p>O Le Petit Village combina decoração elegante com influências africanas tradicionais. Atmosfera acolhedora, tons quentes, móveis de madeira e música africana criam experiência gastronômica memorável.</p>
+            <p>
+              O Le Petit Village combina decoração elegante com influências
+              africanas tradicionais. Atmosfera acolhedora, tons quentes, móveis
+              de madeira e música africana criam experiência gastronômica
+              memorável.
+            </p>
           </div>
         </li>
         <li class="flex gap-4 lg:gap-8">
@@ -85,26 +96,37 @@ import Button from "../components/Button.astro"
             height={52}
             src={People}
             alt="Quatro pessoas."
-            class="w-[52px] lg:h-[52px] h-full object-cover"
+            class="h-full w-[52px] object-cover lg:h-[52px]"
           />
           <div class="flex flex-col gap-3">
             <p class="font-semibold">Som Ao Vivo</p>
-            <p>Valorizamos a comunidade e a herança cultural africana. Colaboramos com artistas, músicos e performers africanos para promover seus talentos. Realizamos eventos culturais, apresentações ao vivo e exposições de arte, destacando as diversas expressões artísticas da África.</p>
+            <p>
+              Valorizamos a comunidade e a herança cultural africana.
+              Colaboramos com artistas, músicos e performers africanos para
+              promover seus talentos. Realizamos eventos culturais,
+              apresentações ao vivo e exposições de arte, destacando as diversas
+              expressões artísticas da África.
+            </p>
           </div>
         </li>
       </ul>
     </div>
-
   </section>
 
-  <section class="hidden-section hide-section-2 max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row lg:items-center px-6 py-8 lg:py-16">
+  <section
+    class="hidden-section hide-section-2 m-auto flex max-w-[1024px] flex-col gap-6 px-6 py-8 lg:flex-row lg:items-center lg:gap-8 lg:py-16"
+  >
     <div class="flex flex-col gap-3 lg:gap-4">
       <h2>Experimente Nossa Variedade Culinária</h2>
-      <p>Aqui você não vai só passar um tempo em nosso restaurante mas terá uma experiência de começo ao fim para aproveitar ao máximo o que a culinária africana tem a oferecer.</p>
+      <p>
+        Aqui você não vai só passar um tempo em nosso restaurante mas terá uma
+        experiência de começo ao fim para aproveitar ao máximo o que a culinária
+        africana tem a oferecer.
+      </p>
       <Button link="/menu" content="Visitar Cardápio" />
     </div>
-    <div class="gap-4 lg:gap-8 grid grid-cols-2 grid-rows-2">
-      <div class="gap-2 flex flex-col items-center bg-zinc-700 px-3 py-6">
+    <div class="grid grid-cols-2 grid-rows-2 gap-4 lg:gap-8">
+      <div class="flex flex-col items-center gap-2 bg-zinc-700 px-3 py-6">
         <Image
           width={52}
           height={52}
@@ -113,10 +135,13 @@ import Button from "../components/Button.astro"
           class="w-[52px]"
         />
         <h3 class="text-center">Entradas</h3>
-        <p class="text-center">Inicie sua jornada com nossos molhos, asas fritas, tilápias assadas e outras opções.</p>
+        <p class="text-center">
+          Inicie sua jornada com nossos molhos, asas fritas, tilápias assadas e
+          outras opções.
+        </p>
       </div>
 
-      <div class="gap-2 flex flex-col items-center bg-zinc-700 px-3 py-6">
+      <div class="flex flex-col items-center gap-2 bg-zinc-700 px-3 py-6">
         <Image
           width={52}
           height={52}
@@ -125,10 +150,12 @@ import Button from "../components/Button.astro"
           class="w-[52px]"
         />
         <h3 class="text-center">Bebidas</h3>
-        <p class="text-center">Sumo natural com sabor da África e muitas outras bebidas e drinks.</p>
+        <p class="text-center">
+          Sumo natural com sabor da África e muitas outras bebidas e drinks.
+        </p>
       </div>
 
-      <div class="gap-2 flex flex-col items-center bg-zinc-700 px-3 py-6">
+      <div class="flex flex-col items-center gap-2 bg-zinc-700 px-3 py-6">
         <Image
           width={52}
           height={52}
@@ -137,10 +164,14 @@ import Button from "../components/Button.astro"
           class="w-[52px]"
         />
         <h3 class="text-center">Sem Carne</h3>
-        <p class="text-center">Contamos também com opções veganas e vegetarianas em nosso cardápio.</p>
+        <p class="text-center">
+          Contamos também com opções veganas e vegetarianas em nosso cardápio.
+        </p>
       </div>
 
-      <div class="gap-2 flex flex-col justify-start items-center bg-zinc-700 px-3 py-6">
+      <div
+        class="flex flex-col items-center justify-start gap-2 bg-zinc-700 px-3 py-6"
+      >
         <Image
           width={52}
           height={52}
@@ -149,20 +180,28 @@ import Button from "../components/Button.astro"
           class="w-[52px]"
         />
         <h3 class="text-center">Refeições</h3>
-        <p class="text-center">Sabores vibrantes, especiarias aromáticas e ingredientes frescos.</p>
+        <p class="text-center">
+          Sabores vibrantes, especiarias aromáticas e ingredientes frescos.
+        </p>
       </div>
     </div>
-
   </section>
 
-  <section class="hidden-section hide-section-3 max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row-reverse px-6 py-8 lg:py-16">
-    <div class="w-full gap-3 flex flex-col">
+  <section
+    class="hidden-section hide-section-3 m-auto flex max-w-[1024px] flex-col gap-6 px-6 py-8 lg:flex-row-reverse lg:gap-8 lg:py-16"
+  >
+    <div class="flex w-full flex-col gap-3">
       <div class="flex flex-col gap-2">
-        <p class="text-yellow-200 font-semibold">Quem É A Petit Village</p>
+        <p class="font-semibold text-yellow-200">Quem É A Petit Village</p>
         <h2>Um Pouco De Nós</h2>
       </div>
-      <p>Somos um encantador restaurante africano com influências camaronesas situado no coração de São Paulo, Brasil. Existimos desde 2016 com a intenção de trazer, combinando receitas tradicionais com técnicas modernas, uma experiência que você vai querer que seja recorrente.</p>
-      <Button link="/about" content="Sobre Nós"/>
+      <p>
+        Somos um encantador restaurante africano com influências camaronesas
+        situado no coração de São Paulo, Brasil. Existimos desde 2016 com a
+        intenção de trazer, combinando receitas tradicionais com técnicas
+        modernas, uma experiência que você vai querer que seja recorrente.
+      </p>
+      <Button link="/about" content="Sobre Nós" />
     </div>
 
     <div class="w-full">
@@ -172,65 +211,69 @@ import Button from "../components/Button.astro"
         quality={50}
         src={ChefSimiling}
         alt="Foto de um chefe muito feliz."
-        class="w-full h-full"
+        class="h-full w-full"
       />
     </div>
   </section>
 
-  <section class="hidden-section hide-section-4 max-w-[1024px] m-auto gap-6 lg:gap-8 flex flex-col lg:flex-row px-6 py-8 lg:py-16">
-    <div class="w-full flex flex-col gap-6">
+  <section
+    class="hidden-section hide-section-4 m-auto flex max-w-[1024px] flex-col gap-6 px-6 py-8 lg:flex-row lg:gap-8 lg:py-16"
+  >
+    <div class="flex w-full flex-col gap-6">
       <h2>Venha Nos Visitar Ou Faça Seu Evento Aqui</h2>
-      <p>Verifique nossas informações de contato aqui e faça seus eventos na nossa casa!</p>
-      <div class="gap-3 flex flex-col">
-        <div class="gap-3 flex items-center">
+      <p>
+        Verifique nossas informações de contato aqui e faça seus eventos na
+        nossa casa!
+      </p>
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-3">
           <Image
             width={32}
             height={32}
             src={Email}
             alt="Ícone simples de um envelope."
-            class="w-[32px] h-full"
+            class="h-full w-[32px]"
           />
           <p>lepetitvillagespbr@gmail.com</p>
         </div>
-        <div class="gap-3 flex items-center">
+        <div class="flex items-center gap-3">
           <Image
             width={32}
             height={32}
             src={Phone}
             alt="Ícone simples de um telefone."
-            class="w-[32px] h-full"
+            class="h-full w-[32px]"
           />
           <p class="w-full">(11) 3331 - 3433</p>
           <p class="w-full">(11) 987379640</p>
         </div>
-        <div class="gap-3 flex items-start">
+        <div class="flex items-start gap-3">
           <Image
             width={32}
             height={32}
             src={Calendar}
             alt="Ícone simples de um calendário com um acerto no meio."
-            class="w-[32px] h-full"
+            class="h-full w-[32px]"
           />
-          <div class="gap-2 flex flex-col">
+          <div class="flex flex-col gap-2">
             <p class="w-full">Segunda-Feira - Sábado</p>
             <p class="w-full">Aberto Somente No Último Domingo Do Mês</p>
           </div>
         </div>
-        <div class="gap-3 flex items-center">
+        <div class="flex items-center gap-3">
           <Image
             width={32}
             height={32}
             src={Hourglass}
             alt="Ícone simples de uma ampulheta."
-            class="w-[32px] h-full"
+            class="h-full w-[32px]"
           />
           <p>12h00 - 02h00</p>
         </div>
       </div>
 
-      <div class="gap-6 lg:gap-8 flex flex-col lg:flex-row">
-
-        <div class="w-full flex flex-col gap-3">
+      <div class="flex flex-col gap-6 lg:flex-row lg:gap-8">
+        <div class="flex w-full flex-col gap-3">
           <Image
             width={56}
             height={56}
@@ -239,20 +282,23 @@ import Button from "../components/Button.astro"
             class="w-[56px]"
           />
           <h3>Eventos</h3>
-          <p>Agende um reunião particular, festa de aniversário, casamento ou outros por aqui.</p>
-          <div class="flex gap-3 items-center">
+          <p>
+            Agende um reunião particular, festa de aniversário, casamento ou
+            outros por aqui.
+          </p>
+          <div class="flex items-center gap-3">
             <a class="text-zinc-100" href="/events">Ir Para Eventos</a>
             <Image
               width={32}
               height={32}
               src={RightArrow}
               alt="Ícone simples de uma seta para direita."
-              class="w-[32px] h-full"
+              class="h-full w-[32px]"
             />
           </div>
         </div>
 
-        <div class="w-full flex flex-col gap-3">
+        <div class="flex w-full flex-col gap-3">
           <Image
             width={56}
             height={56}
@@ -262,20 +308,18 @@ import Button from "../components/Button.astro"
           />
           <h3>Contato</h3>
           <p>Veja onde estamos localizados ou envie-nos uma mensagem.</p>
-          <div class="flex gap-3 items-center">
+          <div class="flex items-center gap-3">
             <a class="text-zinc-100" href="/contact">Ir Para Contato</a>
             <Image
               width={32}
               height={32}
               src={RightArrow}
               alt="Ícone simples de uma seta para direita."
-              class="w-[32px] h-full"
+              class="h-full w-[32px]"
             />
           </div>
         </div>
-
       </div>
-
     </div>
     <div class="w-full">
       <Image
@@ -284,65 +328,61 @@ import Button from "../components/Button.astro"
         quality={50}
         src={DinningTable}
         alt="Mesa de jantar bem decorada."
-        class="w-full h-full object-cover"
+        class="h-full w-full object-cover"
       />
     </div>
   </section>
-
-
 </Layout>
 
 <style>
   .hide-section-1 {
-    @apply opacity-0 blur-sm translate-x-[-100%] transition-all
+    @apply translate-x-[-100%] opacity-0 blur-sm transition-all;
   }
   .show-section-1 {
-    @apply opacity-100 duration-1000 delay-100 blur-none translate-x-0
+    @apply translate-x-0 opacity-100 blur-none delay-100 duration-1000;
   }
 
   .hide-section-2 {
-    @apply opacity-0 blur-sm translate-x-[100%] transition-all
+    @apply translate-x-[100%] opacity-0 blur-sm transition-all;
   }
   .show-section-2 {
-    @apply opacity-100 duration-1000 delay-100 blur-none translate-x-0
+    @apply translate-x-0 opacity-100 blur-none delay-100 duration-1000;
   }
 
   .hide-section-3 {
-    @apply opacity-0 blur-sm translate-y-[-30%] transition-all
+    @apply translate-y-[-30%] opacity-0 blur-sm transition-all;
   }
   .show-section-3 {
-    @apply opacity-100 duration-1000 delay-100 blur-none translate-y-0
+    @apply translate-y-0 opacity-100 blur-none delay-100 duration-1000;
   }
 
   .hide-section-4 {
-    @apply opacity-0 blur-sm translate-y-[30%] transition-all
+    @apply translate-y-[30%] opacity-0 blur-sm transition-all;
   }
   .show-section-4 {
-    @apply opacity-100 duration-1000 delay-100 blur-none translate-y-0
+    @apply translate-y-0 opacity-100 blur-none delay-100 duration-1000;
   }
-
 </style>
 
 <script defer type="module">
   const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-          console.log(entry);
+    entries.forEach((entry) => {
+      console.log(entry)
 
-          const index = Array.from(hiddenElements).indexOf(entry.target);
-          const hideClass = `hide-section-${index + 1}`;
-          const showClass = `show-section-${index + 1}`;
+      const index = Array.from(hiddenElements).indexOf(entry.target)
+      const hideClass = `hide-section-${index + 1}`
+      const showClass = `show-section-${index + 1}`
 
-          if (entry.isIntersecting) {
-              entry.target.classList.add(showClass);
-              entry.target.classList.remove(hideClass);
-          } else {
-              entry.target.classList.add(hideClass);
-              entry.target.classList.remove(showClass);
-          }
-      });
+      if (entry.isIntersecting) {
+        entry.target.classList.add(showClass)
+        entry.target.classList.remove(hideClass)
+      } else {
+        entry.target.classList.add(hideClass)
+        entry.target.classList.remove(showClass)
+      }
+    })
+  })
 
-  });
-
-  const hiddenElements = document.querySelectorAll('.hidden-section');
-  hiddenElements.forEach((el) => observer.observe(el));
+  const hiddenElements = document.querySelectorAll(".hidden-section")
+  hiddenElements.forEach((el) => observer.observe(el))
 </script>

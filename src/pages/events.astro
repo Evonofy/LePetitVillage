@@ -15,148 +15,201 @@ import ThreePeopleSLATE from "/public/Icons/ThreePeopleSLATE.svg"
     img="/Hero/CookingPots.jpg"
   />
 
-  <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8 lg:py-16 lg:flex-row lg:items-center">
+  <section
+    class="m-auto flex max-w-[1024px] flex-col gap-6 px-6 py-8 lg:flex-row lg:items-center lg:py-16"
+  >
     <div class="flex flex-col gap-2 lg:w-full">
       <h2>Agende Seus Eventos Aqui</h2>
-      <p>Agende seu local de reuniões privadas, festas de aniverśario, reuniões corporativas e muitos outros.</p>
+      <p>
+        Agende seu local de reuniões privadas, festas de aniverśario, reuniões
+        corporativas e muitos outros.
+      </p>
     </div>
-    <div class="lg:w-full flex gap-4 overflow-x-scroll py-6 snap-mandatory snap-x">
-
-      <div class="w-9/12 flex-none bg-red-800 gap-2 p-6 snap-center">
-        <div class="gap-2 flex items-center">
+    <div
+      class="flex snap-x snap-mandatory gap-4 overflow-x-scroll py-6 lg:w-full"
+    >
+      <div class="w-9/12 flex-none snap-center gap-2 bg-red-800 p-6">
+        <div class="flex items-center gap-2">
           <Image
             width={32}
             height={32}
             quality={100}
             src={ThreePeople}
             alt="Ícones simples com três pessoas."
-            class="w-[32px] h-full object-cover"
+            class="h-full w-[32px] object-cover"
           />
           <h3>Reuniões</h3>
         </div>
-        <p class="pt-2">Realize reuniões corporativas ou até apenas reuniões privadas com sua famílias.</p>
+        <p class="pt-2">
+          Realize reuniões corporativas ou até apenas reuniões privadas com sua
+          famílias.
+        </p>
       </div>
 
-      <div class="w-9/12 flex-none bg-yellow-300 gap-2 p-6 snap-center">
-        <div class="gap-2 flex items-center">
+      <div class="w-9/12 flex-none snap-center gap-2 bg-yellow-300 p-6">
+        <div class="flex items-center gap-2">
           <Image
             width={32}
             height={32}
             quality={100}
             src={ThreePeopleSLATE}
             alt="Ícones simples com três pessoas."
-            class="w-[32px] h-full object-cover"
+            class="h-full w-[32px] object-cover"
           />
           <h3 class="text-slate-800">Festas De Aniversário</h3>
         </div>
-        <p class="pt-2 text-slate-600">Faça sua ou a festa de aniversário de seus companheiros aqui.</p>
+        <p class="pt-2 text-slate-600">
+          Faça sua ou a festa de aniversário de seus companheiros aqui.
+        </p>
       </div>
 
-      <div class="w-9/12 flex-none bg-red-800 gap-2 p-6 snap-center">
-        <div class="gap-2 flex items-center">
+      <div class="w-9/12 flex-none snap-center gap-2 bg-red-800 p-6">
+        <div class="flex items-center gap-2">
           <Image
             width={32}
             height={32}
             quality={100}
             src={ThreePeople}
             alt="Ícones simples com três pessoas."
-            class="w-[32px] h-full object-cover"
+            class="h-full w-[32px] object-cover"
           />
           <h3>Festa De Casamento</h3>
         </div>
-        <p class="pt-2">Recém casados? Aniversário de casamento? Faça ele na Petit Village.</p>
+        <p class="pt-2">
+          Recém casados? Aniversário de casamento? Faça ele na Petit Village.
+        </p>
       </div>
-
     </div>
-
   </section>
 
-  <section class="max-w-[1024px] m-auto gap-6 flex flex-col px-6 py-8">
-    <form id="eventForm" class="gap-6 flex flex-col items-center">
-      <h2 class="text-left w-full">Preencha As Informações Abaixo</h2>
-      <div class="w-full gap-4 flex flex-col lg:flex-row">
-        <div class="w-full gap-4 flex">
-          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-            <p class="text-slate-100 font-semibold">01</p>
+  <section class="m-auto flex max-w-[1024px] flex-col gap-6 px-6 py-8">
+    <form id="eventForm" class="flex flex-col items-center gap-6">
+      <h2 class="w-full text-left">Preencha As Informações Abaixo</h2>
+      <div class="flex w-full flex-col gap-4 lg:flex-row">
+        <div class="flex w-full gap-4">
+          <div
+            class="flex h-full h-max items-center rounded-full border-2 border-slate-100 px-3"
+          >
+            <p class="font-semibold text-slate-100">01</p>
           </div>
-          <div class="gap-3 flex flex-col">
+          <div class="flex flex-col gap-3">
             <label class="text-slate-100">Qual Seu Nome?</label>
-            <input class="p-0 border-0 bg-zinc-900 text-slate-100" required placeholder="Insira Seu Nome Aqui" type="text" id="nameInput">
+            <input
+              class="border-0 bg-zinc-900 p-0 text-slate-100"
+              required
+              placeholder="Insira Seu Nome Aqui"
+              type="text"
+              id="nameInput"
+            />
           </div>
         </div>
-        <div class="w-full gap-4 flex">
-          <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-            <p class="text-slate-100 font-semibold">02</p>
+        <div class="flex w-full gap-4">
+          <div
+            class="flex h-full h-max items-center rounded-full border-2 border-slate-100 px-3"
+          >
+            <p class="font-semibold text-slate-100">02</p>
           </div>
-          <div class="gap-3 flex flex-col">
-            <label class="text-slate-100">Quantas Pessoas Estarão Presentes</label>
-            <input class="p-0 border-0 bg-zinc-900 text-slate-100" required placeholder="Insira A Quantidade Aqui" min="1" max="20" type="number" id="peopleQuantityInput" name="people">
+          <div class="flex flex-col gap-3">
+            <label class="text-slate-100"
+              >Quantas Pessoas Estarão Presentes</label
+            >
+            <input
+              class="border-0 bg-zinc-900 p-0 text-slate-100"
+              required
+              placeholder="Insira A Quantidade Aqui"
+              min="1"
+              max="20"
+              type="number"
+              id="peopleQuantityInput"
+              name="people"
+            />
           </div>
         </div>
       </div>
 
-
-      <div class="w-full gap-4 flex flex-col lg:flex-row">
-      <div class="w-full gap-4 flex">
-        <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-          <p class="text-slate-100 font-semibold">03</p>
+      <div class="flex w-full flex-col gap-4 lg:flex-row">
+        <div class="flex w-full gap-4">
+          <div
+            class="flex h-full h-max items-center rounded-full border-2 border-slate-100 px-3"
+          >
+            <p class="font-semibold text-slate-100">03</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <label class="text-slate-100" for="name">Tipo Da Ocasião</label>
+            <select
+              class="rounded-lg border-0 bg-zinc-700 text-slate-100"
+              name="occasion"
+              id="occasionSelect"
+            >
+              <option value="um Aniversário">Festa De Aniversário</option>
+              <option value="o Happy Hour">Happy Hour</option>
+              <option value="um Casamento">Festa De Casamento</option>
+              <option value="uma Reunião">Reunião</option>
+            </select>
+          </div>
         </div>
-        <div class="gap-3 flex flex-col">
-          <label class="text-slate-100" for="name">Tipo Da Ocasião</label>
-          <select class="border-0 rounded-lg bg-zinc-700 text-slate-100" name="occasion" id="occasionSelect">
-            <option value="um Aniversário">Festa De Aniversário</option>
-            <option value="o Happy Hour">Happy Hour</option>
-            <option value="um Casamento">Festa De Casamento</option>
-            <option value="uma Reunião">Reunião</option>
-          </select>
+
+        <div class="flex w-full gap-4">
+          <div
+            class="flex h-full h-max items-center rounded-full border-2 border-slate-100 px-3"
+          >
+            <p class="font-semibold text-slate-100">04</p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <label class="text-slate-100" for="name">Aberto Ao Público?</label>
+            <select
+              class="rounded-lg border-0 bg-zinc-700 text-slate-100"
+              name="openToPublic"
+              id="publicSelect"
+            >
+              <option value="será">Sim</option>
+              <option value="não Será">Não</option>
+            </select>
+          </div>
         </div>
       </div>
 
-      <div class="w-full gap-4 flex">
-        <div class="h-max flex items-center h-full px-3 border-2 border-slate-100 rounded-full">
-          <p class="text-slate-100 font-semibold">04</p>
-        </div>
-        <div class="gap-3 flex flex-col">
-          <label class="text-slate-100" for="name">Aberto Ao Público?</label>
-          <select class="border-0 rounded-lg bg-zinc-700 text-slate-100" name="openToPublic" id="publicSelect">
-            <option value="será">Sim</option>
-            <option value="não Será">Não</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <button class="button-data text-slate-100 bg-red-500 px-8 py-4 w-max hover:bg-red-700 transition-colors">Enviar Pedido De Evento</button>
+      <button
+        class="button-data w-max bg-red-500 px-8 py-4 text-slate-100 transition-colors hover:bg-red-700"
+        >Enviar Pedido De Evento</button
+      >
     </form>
   </section>
-
 </Layout>
 
 <script>
-    document.querySelector('button.button-data')?.addEventListener("click", getText)
+  document
+    .querySelector("button.button-data")
+    ?.addEventListener("click", getText)
 
-    function getText(event: Event) {
-      const phone = 11987379640
+  function getText(event: Event) {
+    const phone = 11987379640
 
-      const nameInput = document.getElementById('nameInput') as HTMLInputElement;
-      const name = nameInput.value;
+    const nameInput = document.getElementById("nameInput") as HTMLInputElement
+    const name = nameInput.value
 
-      const peopleInput = document.getElementById('peopleQuantityInput') as HTMLInputElement;
-      const people = peopleInput.value;
+    const peopleInput = document.getElementById(
+      "peopleQuantityInput"
+    ) as HTMLInputElement
+    const people = peopleInput.value
 
-      const occasionSelect = document.getElementById('occasionSelect') as HTMLSelectElement;
-      const selectedOption = occasionSelect.value;
+    const occasionSelect = document.getElementById(
+      "occasionSelect"
+    ) as HTMLSelectElement
+    const selectedOption = occasionSelect.value
 
-      const publicSelect = document.getElementById('publicSelect') as HTMLSelectElement;
-      const publicOption = publicSelect.value;
+    const publicSelect = document.getElementById(
+      "publicSelect"
+    ) as HTMLSelectElement
+    const publicOption = publicSelect.value
 
-      if (name.trim() === "" || people.trim() === "") {
-      return; // Exit the function if required fields are empty
-      }
-
-      const text = `Quero agendar um evento, meu nome é ${name}, estarei com ${people} pessoa(s) e a ocasião selecionada é ${selectedOption}. O evento ${publicOption} aberto ao público.`
-      const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`
-      window.open(url, "_blank")?.focus()
-      event.preventDefault()
+    if (name.trim() === "" || people.trim() === "") {
+      return // Exit the function if required fields are empty
     }
+
+    const text = `Quero agendar um evento, meu nome é ${name}, estarei com ${people} pessoa(s) e a ocasião selecionada é ${selectedOption}. O evento ${publicOption} aberto ao público.`
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`
+    window.open(url, "_blank")?.focus()
+    event.preventDefault()
+  }
 </script>
