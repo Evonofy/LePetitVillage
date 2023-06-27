@@ -1,7 +1,6 @@
+# [🦐 Le Petit Village](https://lepetitvillage.com.br/) <!-- omit in toc --> 
+
 <div align="center">
-
-   # [🦐 Le Petit Village](https://lepetitvillage.com.br/) <!-- omit in toc --> 
-
 </div>
 
 🦐 Um site institucional de um restaurante com influências africanas.
