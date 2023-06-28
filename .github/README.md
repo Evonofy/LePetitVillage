@@ -32,7 +32,7 @@
 - Página de eventos com formulário com pré-formatação para o *whatsapp*.
 
 ### 📜 `Propósito`
-Criar uma página institucional elegante e caseira com essenciais africanas para a Le Petit Village.
+Criar uma página institucional elegante e caseira com essência africanas para a Le Petit Village.
 
 ### 👨‍💻 `Tecnologias E Pacotes`
 
